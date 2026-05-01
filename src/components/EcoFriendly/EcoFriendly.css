@@ -1,0 +1,70 @@
+.eco-section {
+  padding: 5rem 2rem;
+  background: #e8f5e9;
+}
+
+.eco-container {
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.eco-badge {
+  display: inline-block;
+  background: #4caf50;
+  color: #fff;
+  padding: 0.4rem 1rem;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.eco-container h2 {
+  font-size: 2rem;
+  color: #1a1a1a;
+  margin: 0 0 0.8rem;
+}
+
+.eco-container > p {
+  font-size: 1rem;
+  color: #555;
+  max-width: 600px;
+  margin: 0 auto 2.5rem;
+}
+
+.eco-features {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+
+.eco-item {
+  background: #fff;
+  padding: 1.8rem 1rem;
+  border-radius: 10px;
+}
+
+.eco-icon {
+  font-size: 2rem;
+  display: block;
+  margin-bottom: 0.8rem;
+}
+
+.eco-item h4 {
+  font-size: 1.1rem;
+  color: #1a1a1a;
+  margin: 0 0 0.4rem;
+}
+
+.eco-item p {
+  font-size: 0.85rem;
+  color: #666;
+  margin: 0;
+}
+
+@media (max-width: 700px) {
+  .eco-features {
+    grid-template-columns: 1fr;
+  }
+}
