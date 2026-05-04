@@ -14,7 +14,7 @@
 }
 
 .what-is-header h2 {
-  font-size: 2.8rem;
+  font-size: 3.2rem;
   font-weight: 700;
   color: #000000;
   margin: 0 0 0.8rem;
@@ -28,35 +28,34 @@
 .dunnage-info {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 3rem;
+  align-items: stretch;
+  gap: 0;
   margin-bottom: 5rem;
 }
 
 .dunnage-image {
-  display: block;
-  font-size: 0;
-  line-height: 0;
+  display: flex;
+  align-items: stretch;
 }
 
 .dunnage-image img {
   width: 100%;
-  height: auto;
-  object-fit: contain;
-  margin: 0;
-  padding: 0;
-  border: none;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
   display: block;
 }
 
 .dunnage-description {
-  padding: 0;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
+  justify-content: center;
+  padding: 3rem;
+  background: #f9f9f9;
 }
 
 .dunnage-description p {
-  font-size: 1rem;
+  font-size: 1.25rem;
   font-weight: 500;
   color: #333333;
   line-height: 1.6;
@@ -74,10 +73,11 @@
   display: inline-block;
   background: #ff6600;
   color: #ffffff;
-  padding: 0.9rem 2rem;
+  padding: 1rem 2.5rem;
   border-radius: 8px;
   text-decoration: none;
   font-weight: 600;
+  font-size: 1.1rem;
   margin-top: auto;
   align-self: flex-start;
   transition: all 0.3s;
@@ -95,6 +95,10 @@
   
   .dunnage-image img {
     height: 280px;
+  }
+
+  .dunnage-description {
+    padding: 2rem;
   }
   
   .what-is-header h2 {

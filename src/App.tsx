@@ -12,6 +12,7 @@ import Gallery from './pages/Gallery/Gallery';
 import Overview from './pages/Overview/Overview';
 import Features from './pages/Overview/Features';
 import Technical from './pages/Overview/Technical';
+import Certificates from './pages/Overview/Certificates';
 import Footer from './components/Footer/Footer';
 
 function App() {
@@ -35,6 +36,7 @@ function App() {
           <Route path="/overview" element={<Overview />} />
           <Route path="/overview/features" element={<Features />} />
           <Route path="/overview/technical" element={<Technical />} />
+          <Route path="/overview/certificates" element={<Certificates />} />
         </Routes>
       </main>
       <Footer />

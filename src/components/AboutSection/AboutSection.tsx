@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import aboutImage from '../../assets/aboutus.jpeg';
 import './AboutSection.css';
 
 const AboutSection = () => {
@@ -9,18 +10,13 @@ const AboutSection = () => {
     <section id="about" className="about-section">
       <div className="about-container">
         <div className="about-image">
-          <img src="https://images.unsplash.com/photo-1607166452427-7e5c4c5f8b7c?w=600" alt="Stuffex Air Dunnage Bag Packaging" />
+          <img src={aboutImage} alt="Dunnage Bag pvt. ltd." />
           <div className="about-image-accent"></div>
         </div>
         <div className="about-content">
-<h2>Protecting Shipments<br />Since 2015</h2>
+<h1>Stuffex Air Dunnage Bag<br />Air Dunnage pvt. ltd.</h1>
           <p>
-            A professional protective packaging solution that keeps cargo safe and secure during transit — inflating within seconds to fill void spaces, prevent load shifting, and cushion your goods from origin to destination.
-
-Inflates in seconds,
-Prevents load shifting,
-Trucks, trailers & containers,
-Virgin PE & Kraft paper
+Established In 2010, Dunnage Bag Pvt. Ltd. Is A Leading Manufacturer Of Air Dunnage Bags With Headquarter & Production Plant In Bharuch Gujarat, India.
           </p>
           <button className="about-btn" onClick={() => setShowFullAbout(true)}>
             Learn Our Story
@@ -33,9 +29,13 @@ Virgin PE & Kraft paper
           <div className="about-modal-content" onClick={(e) => e.stopPropagation()}>
             <button className="close-btn" onClick={() => setShowFullAbout(false)}>&times;</button>
             <h2></h2>
-            <p>Air Dunnage Bags are inflated with compressed air and placed precisely in the void spaces between cargo units — acting as a reliable padding barrier that prevents movement, impact, and load shifting throughout transit.</p>
-            <p>They are the most efficient and trustworthy solution for securing cargo across trucks, trailers, and sea containers, ensuring your products arrive safely and intact while preventing accidents during unloading at your customer's end.</p>
-               <p>Equipped with an auto shut-off valve and the fastest-filling technology on earth, each bag is crafted from a Virgin PE Bladder and Extensible Kraft Paper — delivering superior cushioning and void-filling protection for your cargo's entire journey, worldwi</p>
+            <p>Stuffex™ Air Dunnage Bags are engineered to deliver superior cargo stabilization, load protection, and transport safety across all modes of logistics — road, rail, sea, and intermodal shipping.</p>
+
+<p>Manufactured using multi-layer co-extruded polyethylene (PE) inner bladders combined with high-strength woven polypropylene (PP) or kraft paper exteriors, Stuffex™ Air Dunnage Bags are designed to prevent load shifting, damage, and collapse during transit.</p>
+
+<p>These lightweight, easy-to-use inflatable bags provide an economical, reliable, and reusable solution for filling voids, cushioning cargo, and ensuring goods arrive safely and intact — minimizing product damage, claims, and operational losses.</p>
+
+<p>Stuffex™ isn’t just an airbag — it’s your first line of defence against cargo damage</p>
           </div>
         </div>
       )}

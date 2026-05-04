@@ -26,6 +26,7 @@ const Header = () => {
     { name: 'Gallery', path: '/gallery' },
     { name: 'Features & Benefits', path: '/overview/features' },
     { name: 'Technical Specifications', path: '/overview/technical' },
+    { name: 'Our Certificates', path: '/overview/certificates' },
   ];
 
   const otherNavItems = [
@@ -36,8 +37,8 @@ const Header = () => {
   return (
     <header className="header">
       <div className="header-container">
-        <Link to="/" className="logo">
-          <img src={logo} alt="Stuffex" />
+        <Link to="/" className="header-left">
+          <img src={logo} alt="Dunnage Bag" className="header-logo" />
         </Link>
 
         <button 
@@ -94,6 +95,11 @@ const Header = () => {
             </Link>
           ))}
         </nav>
+
+        <div className="header-right">
+          <span className="company-name">dunnage bag</span>
+          <span className="company-sub">pvt. ltd.</span>
+        </div>
       </div>
     </header>
   );

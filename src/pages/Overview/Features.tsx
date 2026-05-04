@@ -4,34 +4,34 @@ import './Overview.css';
 const Features = () => {
   const featuresData = [
     {
-      title: 'Superior Protection',
-      description: 'Our dunnage bags provide excellent cushioning and impact absorption, protecting your goods during transit.',
+      title: '100% Virgin & Recyclable',
+      description: 'Made from 100% virgin & recyclable outer material for sustainable packaging.',
+      icon: '♻️'
+    },
+    {
+      title: 'Multilayer Film Technology',
+      description: 'Multilayer film for long lasting air holding characteristic.',
+      icon: '🔒'
+    },
+    {
+      title: 'Imported Spring Valve',
+      description: 'Universally approved imported spring valve for reliable performance.',
+      icon: '✓'
+    },
+    {
+      title: 'Double Folding & Stitching',
+      description: 'Double folding and double stitching finishing for extra safety.',
       icon: '🛡️'
     },
     {
-      title: 'Cost-Effective',
-      description: 'Reusable and durable design helps reduce packaging costs significantly.',
-      icon: '💰'
+      title: 'Quality Assured',
+      description: 'Each and every bag checked physically before dispatch to assure zero leakage.',
+      icon: '✅'
     },
     {
-      title: 'Easy to Use',
-      description: 'Simple inflation and deflation process, saving time and labor costs.',
-      icon: '⚡'
-    },
-    {
-      title: 'Eco-Friendly',
-      description: 'Made from recyclable materials, helping you meet sustainability goals.',
-      icon: '🌱'
-    },
-    {
-      title: 'Versatile Applications',
-      description: 'Suitable for various industries including automotive, pharmaceuticals, food & beverage, and more.',
-      icon: '📦'
-    },
-    {
-      title: 'Customizable',
+      title: 'Customizable Sizes',
       description: 'Available in multiple sizes and specifications to meet specific cargo requirements.',
-      icon: '🔧'
+      icon: '📏'
     }
   ];
 
@@ -41,7 +41,7 @@ const Features = () => {
         <div className="features-header">
           <Link to="/about" className="back-link">← Back to Overview</Link>
           <h2>Features & Benefits</h2>
-          <p>Discover why Stuffex dunnage bags are the preferred choice for safe cargo transport</p>
+          <p>Premium quality dunnage bags designed for superior cargo protection</p>
         </div>
         <div className="features-grid">
           {featuresData.map((item, index) => (

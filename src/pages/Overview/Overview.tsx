@@ -29,6 +29,12 @@ const Overview = () => {
             <h3>Technical Specifications</h3>
             <p>Detailed technical specifications and parameters</p>
           </Link>
+
+          <Link to="/overview/certificates" className="overview-card">
+            <span className="overview-icon">🏆</span>
+            <h3>Our Certificates</h3>
+            <p>Quality and safety certifications</p>
+          </Link>
         </div>
       </div>
     </div>

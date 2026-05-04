@@ -8,7 +8,7 @@ const Hero = () => {
       <div className="hero-overlay"></div>
       <div className="hero-content">
         <div className="hero-bottom">
-          <h1 className="hero-company">DUNNAGE BAG PVT. LTD.</h1>
+        
         </div>
       </div>
     </section>
