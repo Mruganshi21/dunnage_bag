@@ -8,6 +8,8 @@ import HappyCustomers from './components/HappyCustomers/HappyCustomers';
 import Products from './pages/Products';
 import About from './pages/About/About';
 import Contact from './pages/Contact/Contact';
+import Blog from './pages/Blog/Blog';
+import Admin from './pages/Admin/Admin';
 import Gallery from './pages/Gallery/Gallery';
 import Overview from './pages/Overview/Overview';
 import Features from './pages/Overview/Features';
@@ -29,9 +31,11 @@ function App() {
               <HappyCustomers />
             </>
           } />
-          <Route path="/products" element={<Products />} />
           <Route path="/about" element={<About />} />
+          <Route path="/products" element={<Products />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/blog" element={<Blog />} />
+          <Route path="/admin" element={<Admin />} />
           <Route path="/gallery" element={<Gallery />} />
           <Route path="/overview" element={<Overview />} />
           <Route path="/overview/features" element={<Features />} />

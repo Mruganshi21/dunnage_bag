@@ -1,10 +1,10 @@
 .header {
-  background: #ffffff;
+  background: var(--color-white);
   padding: 1rem 0;
   position: sticky;
   top: 0;
   z-index: 1000;
-  border-bottom: 3px solid #ff6600;
+  border-bottom: 3px solid var(--color-orange);
 }
 
 .header-container {
@@ -30,9 +30,10 @@
 
 .header-right {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: flex-end;
   flex: 1;
+  gap: 0.3rem;
 }
 
 .nav {
@@ -46,16 +47,17 @@
 .company-name {
   font-size: 1.5rem;
   font-weight: 700;
-  color: #ff6600;
+  color: var(--color-orange);
   text-transform: uppercase;
   letter-spacing: 1px;
 }
 
 .company-sub {
-  font-size: 0.7rem;
-  color: #666;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--color-orange);
   text-transform: uppercase;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
   margin-top: 2px;
 }
 
@@ -66,7 +68,7 @@
 }
 
 .nav-link {
-  color: #000000;
+  color: var(--color-primary);
   text-decoration: none;
   font-size: 1rem;
   font-weight: 600;
@@ -78,11 +80,11 @@
 }
 
 .nav-link:hover {
-  color: #ff6600;
+  color: var(--color-orange);
 }
 
 .dropdown-trigger:hover {
-  color: #ff6600;
+  color: var(--color-orange);
 }
 
 /* Dropdown */
@@ -95,7 +97,7 @@
   align-items: center;
   gap: 0.3rem;
   cursor: pointer;
-  color: #000000;
+  color: var(--color-primary);
 }
 
 .dropdown-arrow {
@@ -107,7 +109,7 @@
   position: absolute;
   top: 100%;
   left: 0;
-  background: #fff;
+  background: var(--color-white);
   min-width: 200px;
   border-radius: 8px;
   box-shadow: 0 4px 20px rgba(0,0,0,0.15);
@@ -127,15 +129,15 @@
 .dropdown-item {
   display: block;
   padding: 0.6rem 1rem;
-  color: #444;
+  color: var(--color-text);
   text-decoration: none;
   font-size: 0.85rem;
   transition: all 0.2s;
 }
 
 .dropdown-item:hover {
-  background: #ff6600;
-  color: #ffffff;
+  background: var(--color-orange);
+  color: var(--color-white);
 }
 
 .mobile-menu-btn {
@@ -150,7 +152,7 @@
   display: block;
   width: 22px;
   height: 3px;
-  background: #ff6600;
+  background: var(--color-orange);
   position: relative;
 }
 
@@ -160,7 +162,7 @@
   position: absolute;
   width: 22px;
   height: 3px;
-  background: #ff6600;
+  background: var(--color-orange);
   left: 0;
 }
 
@@ -187,7 +189,7 @@
     top: 100%;
     left: 0;
     right: 0;
-    background: #fff;
+    background: var(--color-white);
     flex-direction: column;
     padding: 1rem 2rem;
     gap: 0.8rem;

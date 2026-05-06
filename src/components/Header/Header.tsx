@@ -13,12 +13,13 @@ const Header = () => {
 
   const navItems = [
     { name: 'Home', path: '/' },
+    { name: 'About', path: '/about' },
   ];
 
   const productItems = [
     { name: 'All Products', path: '/products' },
-    { name: 'Air Dunnage Bag', path: '/products?cat=plastic' },
-    { name: 'Paper Dunnage', path: '/products?cat=paper' },
+    { name: 'PP Air Dunnage Bag', path: '/products?cat=plastic' },
+    { name: 'Paper Air Dunnage Bag', path: '/products?cat=paper' },
     { name: 'Tools & Equipment', path: '/products?cat=tools' },
   ];
 
@@ -27,11 +28,6 @@ const Header = () => {
     { name: 'Features & Benefits', path: '/overview/features' },
     { name: 'Technical Specifications', path: '/overview/technical' },
     { name: 'Our Certificates', path: '/overview/certificates' },
-  ];
-
-  const otherNavItems = [
-    { name: 'About', path: '/about' },
-    { name: 'Contact', path: '/contact' },
   ];
 
   return (
@@ -56,9 +52,9 @@ const Header = () => {
           ))}
           
           <div className="dropdown">
-            <Link to="/products" className="nav-link dropdown-trigger">
+            <span className="nav-link dropdown-trigger">
               Products <span className="dropdown-arrow">▼</span>
-            </Link>
+            </span>
             <div className="dropdown-menu">
               {productItems.map((item) => (
                 <Link 
@@ -73,9 +69,9 @@ const Header = () => {
           </div>
           
           <div className="dropdown">
-            <Link to="/overview" className="nav-link dropdown-trigger">
+            <span className="nav-link dropdown-trigger">
               Overview <span className="dropdown-arrow">▼</span>
-            </Link>
+            </span>
             <div className="dropdown-menu">
               {overviewItems.map((item) => (
                 <Link 
@@ -89,11 +85,8 @@ const Header = () => {
             </div>
           </div>
           
-          {otherNavItems.map((item) => (
-            <Link key={item.name} to={item.path} className="nav-link">
-              {item.name}
-            </Link>
-          ))}
+          <Link to="/blog" className="nav-link">Blog</Link>
+          <Link to="/contact" className="nav-link">Contact</Link>
         </nav>
 
         <div className="header-right">

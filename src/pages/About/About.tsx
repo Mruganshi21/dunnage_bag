@@ -1,4 +1,6 @@
 import { useLocation, Link } from 'react-router-dom';
+import eliteLogo from '../../assets/elite-logo.png';
+import sishLogo from '../../assets/sish-logo.png';
 import './About.css';
 
 const About = () => {
@@ -97,37 +99,38 @@ const About = () => {
         <div className="about-header">
           <Link to="/" className="back-link">← Back to Home</Link>
           <h2>About Us</h2>
-          <p>Elite Industries was established in 2010 in Bharuch, Gujarat, with a clear purpose — to redefine how India approaches export packaging and cargo protection. Over the past 14+ years, we have grown from a regional supplier into one of India's most professional, progressive, and punctual enterprises in the packaging and material handling industry.
-Headquartered at the Bharuch GIDC Estate, we operate as a manufacturer and wholesaler of a comprehensive range of export packaging materials for containers and cargo. Our product portfolio includes Dunnage Air Bags, Polyester Composite Straps, PET Straps, Stretch Wrapping Films, PP Corrugated Sheets, Paper Edge Boards, Security Seals, and Cable Ties — making us a true one-stop destination for all packaging, material handling, and insulation needs.</p>
+          <p>Dunnage Bag Pvt. Ltd. was established in 2010 in Bharuch, Gujarat, with a clear purpose — to redefine how India approaches export packaging and cargo protection. 
+
+Over the past 14+ years, we have grown from a regional supplier into one of India's most professional, progressive, and punctual industry in the Dunnage Air Bags Manufacturing.
+
+Our products are precisely manufactured by following high quality standards for best performance matching international standards. We understand that our success is dependent upon yours. We offer top quality packaging materials at competitive prices. 
+
+In a bid to help our customers order in confidence, we always stand behind our products and back every order with a 100% satisfaction guarantee.
+</p>
         </div>
 
         <div className="about-content">
           <div className="about-section">
             <h3>Our Mission</h3>
-            <p>To be India's most trusted one-stop provider of export packaging, material handling, and insulation 
-              solutions — delivering precision-manufactured products that meet international quality standards, 
-              at competitive prices, with unwavering commitment to on-time delivery and 100% customer satisfaction.</p>
+            <p>To be India’s Most trusted Manufacturer Of Dunnage Air Bags to meet international quality standards, at competitive price, with unwavering commitment to on-time delivery and 100% customer satisfaction.
+</p>
           </div>
 
           <div className="about-section">
             <h3>Our Vision</h3>
-            <p>To emerge as a globally recognized leader in export packaging and cargo protection solutions,
-               empowering businesses of every scale to ship with confidence — by continuously innovating, 
-               maintaining the highest product quality, and building lasting partnerships rooted in reliability and value.</p>
+            <p>To emerge as a globally recognized leader in Packaging material, empowering businesses of every scale to ship with confidence – by continuously innovating, maintaining the highest product quality and building lasting partnerships rooted in reliability and value. 
+</p>
           </div>
 
-          <div className="about-stats">
-            <div className="stat-card">
-              <h4>Years Experience</h4>
-              <p className="stat-number">[X]</p>
-            </div>
-            <div className="stat-card">
-              <h4>Products</h4>
-              <p className="stat-number">[X]+</p>
-            </div>
-            <div className="stat-card">
-              <h4>Happy Customers</h4>
-              <p className="stat-number">[X]+</p>
+          <div className="about-footer">
+            <h3>Our Group Companies</h3>
+            <div className="companies-links">
+              <a href="http://eliteind.in/" target="_blank" rel="noopener noreferrer" className="company-link">
+                <img src={eliteLogo} alt="Elite" />
+              </a>
+              <a href="https://www.shishind.com/" target="_blank" rel="noopener noreferrer" className="company-link">
+                <img src={sishLogo} alt="Sish" />
+              </a>
             </div>
           </div>
         </div>

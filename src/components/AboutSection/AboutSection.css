@@ -2,7 +2,7 @@
   padding: 7rem 2rem;
   position: relative;
   overflow: hidden;
-  background: #ffffff;
+  background: var(--color-white);
 }
 
 .about-section::before {
@@ -44,7 +44,7 @@
   left: 20px;
   right: -20px;
   bottom: -20px;
-  background: #ff6600;
+  background: var(--color-orange);
   border-radius: 12px;
   z-index: -1;
 }
@@ -56,21 +56,21 @@
 .about-content h2 {
   font-size: 2.5rem;
   font-weight: 700;
-  color: #ff6600;
+  color: var(--color-orange);
   margin: 0 0 1.5rem;
   line-height: 1.2;
 }
 
 .about-content p {
-  color: #333333;
+  color: var(--color-text);
   font-size: 1.05rem;
   line-height: 1.7;
   margin: 0 0 1.2rem;
 }
 
 .about-btn {
-  background: #ff6600;
-  color: #ffffff;
+  background: var(--color-orange);
+  color: var(--color-white);
   border: none;
   padding: 1rem 2rem;
   font-size: 0.95rem;
@@ -82,13 +82,13 @@
 }
 
 .about-btn:hover {
-  background: #cc5200;
+  background: var(--color-orange-dark);
 }
 
 .about-modal {
   position: fixed;
   top: 0; left: 0; right: 0; bottom: 0;
-  background: rgba(0,0,0,0.9);
+  background: rgba(0, 0, 0, 0.9);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -97,27 +97,32 @@
 }
 
 .about-modal-content {
-  background: #ffffff;
+  background: var(--color-white);
   padding: 2.5rem;
   border-radius: 12px;
   max-width: 550px;
   max-height: 80vh;
   overflow-y: auto;
   position: relative;
-  border: 2px solid #ff6600;
+  border: 2px solid var(--color-orange);
 }
 
 .about-modal-content h2 {
-  color: #ff6600;
+  color: var(--color-orange);
   font-size: 1.8rem;
   margin: 0 0 1.2rem;
 }
 
 .about-modal-content p {
-  color: #333333;
+  color: var(--color-text);
   font-size: 0.95rem;
   line-height: 1.7;
   margin: 0 0 1rem;
+}
+
+.about-modal-content .highlight-text {
+  font-size: 0.95rem;
+  font-weight: 700;
 }
 
 .close-btn {
@@ -127,7 +132,7 @@
   border: none;
   font-size: 2rem;
   cursor: pointer;
-  color: #ff6600;
+  color: var(--color-orange);
 }
 
 @media (max-width: 850px) {

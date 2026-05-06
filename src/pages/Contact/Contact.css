@@ -1,6 +1,6 @@
 .contact-page {
   padding: 5rem 2rem 7rem;
-  background: #ffffff;
+  background: var(--color-white);
   min-height: 100vh;
 }
 
@@ -16,7 +16,7 @@
 
 .back-link {
   display: inline-block;
-  color: #ff6600;
+  color: var(--color-orange);
   margin-bottom: 1.5rem;
   text-decoration: none;
   font-weight: 600;
@@ -25,13 +25,13 @@
 .contact-header h2 {
   font-size: 2.8rem;
   font-weight: 700;
-  color: #000000;
+  color: var(--color-primary);
   margin: 0 0 0.8rem;
 }
 
 .contact-header p {
   font-size: 1.1rem;
-  color: #333333;
+  color: var(--color-text);
 }
 
 .contact-content {
@@ -47,16 +47,16 @@
 }
 
 .info-section {
-  background: #ffffff;
+  background: var(--color-white);
   border-radius: 12px;
   padding: 1.5rem;
-  border: 2px solid #000000;
+  border: 2px solid var(--color-primary);
 }
 
 .info-section h3 {
   font-size: 1rem;
   font-weight: 600;
-  color: #ff6600;
+  color: var(--color-orange);
   margin: 0 0 0.5rem;
   text-transform: uppercase;
   letter-spacing: 0.5px;
@@ -64,22 +64,22 @@
 
 .info-section p {
   font-size: 1rem;
-  color: #000000;
+  color: var(--color-primary);
   margin: 0;
   line-height: 1.5;
 }
 
 .contact-form {
-  background: #ffffff;
+  background: var(--color-white);
   border-radius: 12px;
   padding: 2rem;
-  border: 2px solid #000000;
+  border: 2px solid var(--color-primary);
 }
 
 .contact-form h3 {
   font-size: 1.5rem;
   font-weight: 700;
-  color: #000000;
+  color: var(--color-primary);
   margin: 0 0 1.5rem;
 }
 
@@ -91,7 +91,7 @@
   display: block;
   font-size: 0.85rem;
   font-weight: 600;
-  color: #000000;
+  color: var(--color-primary);
   margin-bottom: 0.5rem;
   text-transform: uppercase;
   letter-spacing: 0.5px;
@@ -102,9 +102,9 @@
   width: 100%;
   padding: 0.8rem 1rem;
   font-size: 1rem;
-  color: #000000;
-  background: #ffffff;
-  border: 1px solid #000000;
+  color: var(--color-primary);
+  background: var(--color-white);
+  border: 1px solid var(--color-primary);
   border-radius: 8px;
   outline: none;
   transition: border-color 0.3s;
@@ -113,12 +113,12 @@
 
 .form-group input:focus,
 .form-group textarea:focus {
-  border-color: #ff6600;
+  border-color: var(--color-orange);
 }
 
 .form-group input::placeholder,
 .form-group textarea::placeholder {
-  color: #666;
+  color: var(--color-text-light);
 }
 
 .form-group textarea {
@@ -131,8 +131,8 @@
   padding: 1rem;
   font-size: 1rem;
   font-weight: 600;
-  color: #ffffff;
-  background: #ff6600;
+  color: var(--color-white);
+  background: var(--color-orange);
   border: none;
   border-radius: 8px;
   cursor: pointer;
@@ -140,7 +140,7 @@
 }
 
 .submit-btn:hover {
-  background: #e55a00;
+  background: var(--color-orange-dark);
   transform: translateY(-2px);
 }
 

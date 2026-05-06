@@ -14,7 +14,7 @@ const AboutSection = () => {
           <div className="about-image-accent"></div>
         </div>
         <div className="about-content">
-<h1>Stuffex Air Dunnage Bag<br />Air Dunnage pvt. ltd.</h1>
+          <h1>Who Are We?</h1>
           <p>
 Established In 2010, Dunnage Bag Pvt. Ltd. Is A Leading Manufacturer Of Air Dunnage Bags With Headquarter & Production Plant In Bharuch Gujarat, India.
           </p>
@@ -35,7 +35,7 @@ Established In 2010, Dunnage Bag Pvt. Ltd. Is A Leading Manufacturer Of Air Dunn
 
 <p>These lightweight, easy-to-use inflatable bags provide an economical, reliable, and reusable solution for filling voids, cushioning cargo, and ensuring goods arrive safely and intact — minimizing product damage, claims, and operational losses.</p>
 
-<p>Stuffex™ isn’t just an airbag — it’s your first line of defence against cargo damage</p>
+<p className="highlight-text">Stuffex™ isn't just an airbag — it's your first line of defence against cargo damage</p>
           </div>
         </div>
       )}

@@ -24,7 +24,7 @@ const Products = () => {
   const categories = [
     {
       id: 'plastic',
-      name: 'PP Air Bag',
+      name: 'PP Air Dunnage Bag',
       description: 'Durable, reusable and water-resistant packaging material',
       image: 'https://images.unsplash.com/photo-1589939705384-518513476a87?w=400',
       products: [
@@ -99,27 +99,6 @@ const Products = () => {
                   </div>
                   <div className="product-content">
                     <h4>{product.name}</h4>
-                    
-                    <div className="product-section">
-                      <h5>Features</h5>
-                      <ul>
-                        {product.features.map((f, i) => <li key={i}>{f}</li>)}
-                      </ul>
-                    </div>
-
-                    <div className="product-section">
-                      <h5>Benefits</h5>
-                      <ul>
-                        {product.benefits.map((b, i) => <li key={i}>{b}</li>)}
-                      </ul>
-                    </div>
-
-                    <div className="product-section">
-                      <h5>Available Options</h5>
-                      <ul className="sub-options">
-                        {product.subOptions.map((sub, i) => <li key={i}>{sub}</li>)}
-                      </ul>
-                    </div>
                   </div>
                 </div>
               ))}

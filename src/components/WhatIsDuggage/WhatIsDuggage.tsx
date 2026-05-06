@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import dunnageImage from '../../assets/why_choose_dunnage.png';
+import dunnageImage from '../../assets/whatisdunnagebag.jpeg';
 import './WhatIsDuggage.css';
 
 const WhatIsDuggage = () => {

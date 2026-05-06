@@ -1,0 +1,238 @@
+.admin-page {
+  padding: 7rem 2rem;
+  background: #f5f5f5;
+  min-height: 100vh;
+}
+
+.admin-container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.admin-container h2 {
+  font-size: 2.5rem;
+  margin: 1rem 0 2rem;
+}
+
+.login-form {
+  max-width: 400px;
+  margin: 3rem auto;
+  background: white;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+}
+
+.login-form .form-group {
+  margin-bottom: 1.5rem;
+}
+
+.login-form label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+.login-form input {
+  width: 100%;
+  padding: 0.8rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+.login-form button {
+  width: 100%;
+  padding: 1rem;
+  background: #ff6600;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.login-form .error-msg {
+  color: #d00;
+  margin: 1rem 0;
+}
+
+.admin-tabs {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.admin-tabs button {
+  padding: 1rem 2rem;
+  border: none;
+  background: #ddd;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 8px;
+}
+
+.admin-tabs button.active {
+  background: #ff6600;
+  color: white;
+}
+
+.messages-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.message-card {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.message-card h4 {
+  margin: 0 0 0.5rem;
+  color: #ff6600;
+}
+
+.message-card p {
+  margin: 0.3rem 0;
+  color: #333;
+}
+
+.msg-date {
+  font-size: 0.8rem;
+  color: #888;
+}
+
+.blogs-management {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 8px;
+}
+
+.add-blog-btn {
+  background: #ff6600;
+  color: white;
+  border: none;
+  padding: 0.8rem 1.5rem;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.blogs-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.blog-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+  border: 1px solid #eee;
+  border-radius: 8px;
+}
+
+.blog-item img {
+  width: 100px;
+  height: 70px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.blog-item .blog-info {
+  flex: 1;
+}
+
+.blog-item h4 {
+  margin: 0 0 0.3rem;
+}
+
+.blog-item p {
+  margin: 0;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.blog-item span {
+  font-size: 0.8rem;
+  color: #888;
+}
+
+.delete-btn {
+  background: #d00;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.modal {
+  background: white;
+  padding: 2rem;
+  border-radius: 12px;
+  width: 90%;
+  max-width: 500px;
+}
+
+.modal h3 {
+  margin: 0 0 1.5rem;
+}
+
+.form-group {
+  margin-bottom: 1rem;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 0.8rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+.modal-actions {
+  display: flex;
+  gap: 1rem;
+  justify-content: flex-end;
+  margin-top: 1.5rem;
+}
+
+.modal-actions button {
+  padding: 0.8rem 1.5rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.modal-actions button[type="button"] {
+  background: #ddd;
+}
+
+.modal-actions button[type="submit"] {
+  background: #ff6600;
+  color: white;
+}

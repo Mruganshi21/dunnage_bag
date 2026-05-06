@@ -26,6 +26,7 @@ const Technical = () => {
                   <th>90 X 210</th>
                   <th>120 X 120</th>
                   <th>120 X 180</th>
+                  <th>120 X 210</th>
                 </tr>
               </thead>
               <tbody>
@@ -38,6 +39,7 @@ const Technical = () => {
                   <td>22 Ton</td>
                   <td>14 Ton</td>
                   <td>18 Ton</td>
+                  <td>24 Ton</td>
                 </tr>
                 <tr>
                   <td className="row-header">15cm</td>
@@ -47,6 +49,7 @@ const Technical = () => {
                   <td>15 Ton</td>
                   <td>10 Ton</td>
                   <td>12 Ton</td>
+                  <td>20 Ton</td>
                 </tr>
                 <tr>
                   <td className="row-header">20cm</td>
@@ -56,6 +59,7 @@ const Technical = () => {
                   <td>10 Ton</td>
                   <td>7 Ton</td>
                   <td>9 Ton</td>
+                  <td>15 Ton</td>
                 </tr>
                 <tr>
                   <td className="row-header">30cm</td>
@@ -65,6 +69,7 @@ const Technical = () => {
                   <td>7.5 Ton</td>
                   <td>5 Ton</td>
                   <td>6 Ton</td>
+                  <td>10 Ton</td>
                 </tr>
                 <tr>
                   <td className="row-header">40cm</td>
@@ -74,6 +79,7 @@ const Technical = () => {
                   <td></td>
                   <td>2.5 Ton</td>
                   <td>3 Ton</td>
+                  <td>5 Ton</td>
                 </tr>
                 <tr>
                   <td className="row-header"></td>
@@ -93,6 +99,7 @@ const Technical = () => {
                   <td>55cm</td>
                   <td>60cm</td>
                   <td>65cm</td>
+                  <td>70cm</td>
                 </tr>
                 
               </tbody>
