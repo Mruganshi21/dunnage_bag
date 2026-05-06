@@ -1,9 +1,7 @@
-import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import './Overview.css';
 
 const Certificates = () => {
-  const [selectedCert, setSelectedCert] = useState<string | null>(null);
 
   const certificates = [
     {
