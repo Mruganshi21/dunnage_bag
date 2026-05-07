@@ -1,6 +1,6 @@
 .admin-page {
   padding: 7rem 2rem;
-  background: #f5f5f5;
+  background: var(--color-light-gray);
   min-height: 100vh;
 }
 
@@ -12,15 +12,16 @@
 .admin-container h2 {
   font-size: 2.5rem;
   margin: 1rem 0 2rem;
+  color: var(--color-primary);
 }
 
 .login-form {
   max-width: 400px;
   margin: 3rem auto;
-  background: white;
+  background: var(--color-white);
   padding: 2rem;
   border-radius: 12px;
-  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+  box-shadow: var(--shadow-md);
 }
 
 .login-form .form-group {
@@ -31,21 +32,23 @@
   display: block;
   margin-bottom: 0.5rem;
   font-weight: 600;
+  color: var(--color-primary);
 }
 
 .login-form input {
   width: 100%;
   padding: 0.8rem;
-  border: 1px solid #ddd;
+  border: 1px solid var(--color-border);
   border-radius: 4px;
   font-size: 1rem;
+  color: var(--color-primary);
 }
 
 .login-form button {
   width: 100%;
   padding: 1rem;
-  background: #ff6600;
-  color: white;
+  background: var(--color-orange);
+  color: var(--color-white);
   border: none;
   border-radius: 4px;
   font-size: 1rem;
@@ -66,16 +69,17 @@
 .admin-tabs button {
   padding: 1rem 2rem;
   border: none;
-  background: #ddd;
+  background: var(--color-medium-gray);
   cursor: pointer;
   font-size: 1rem;
   font-weight: 600;
   border-radius: 8px;
+  color: var(--color-primary);
 }
 
 .admin-tabs button.active {
-  background: #ff6600;
-  color: white;
+  background: var(--color-orange);
+  color: var(--color-white);
 }
 
 .messages-list {
@@ -85,36 +89,36 @@
 }
 
 .message-card {
-  background: white;
+  background: var(--color-white);
   padding: 1.5rem;
   border-radius: 8px;
-  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  box-shadow: var(--shadow-sm);
 }
 
 .message-card h4 {
   margin: 0 0 0.5rem;
-  color: #ff6600;
+  color: var(--color-orange);
 }
 
 .message-card p {
   margin: 0.3rem 0;
-  color: #333;
+  color: var(--color-text);
 }
 
 .msg-date {
   font-size: 0.8rem;
-  color: #888;
+  color: var(--color-medium-gray);
 }
 
 .blogs-management {
-  background: white;
+  background: var(--color-white);
   padding: 1.5rem;
   border-radius: 8px;
 }
 
 .add-blog-btn {
-  background: #ff6600;
-  color: white;
+  background: var(--color-orange);
+  color: var(--color-white);
   border: none;
   padding: 0.8rem 1.5rem;
   border-radius: 8px;
@@ -134,7 +138,7 @@
   align-items: center;
   gap: 1rem;
   padding: 1rem;
-  border: 1px solid #eee;
+  border: 1px solid var(--color-border);
   border-radius: 8px;
 }
 
@@ -151,22 +155,23 @@
 
 .blog-item h4 {
   margin: 0 0 0.3rem;
+  color: var(--color-primary);
 }
 
 .blog-item p {
   margin: 0;
   font-size: 0.9rem;
-  color: #666;
+  color: var(--color-text-light);
 }
 
 .blog-item span {
   font-size: 0.8rem;
-  color: #888;
+  color: var(--color-medium-gray);
 }
 
 .delete-btn {
   background: #d00;
-  color: white;
+  color: var(--color-white);
   border: none;
   padding: 0.5rem 1rem;
   border-radius: 4px;
@@ -176,7 +181,7 @@
 .modal-overlay {
   position: fixed;
   inset: 0;
-  background: rgba(0,0,0,0.5);
+  background: rgba(26, 26, 26, 0.5);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -184,7 +189,7 @@
 }
 
 .modal {
-  background: white;
+  background: var(--color-white);
   padding: 2rem;
   border-radius: 12px;
   width: 90%;
@@ -193,6 +198,7 @@
 
 .modal h3 {
   margin: 0 0 1.5rem;
+  color: var(--color-primary);
 }
 
 .form-group {
@@ -203,15 +209,17 @@
   display: block;
   margin-bottom: 0.5rem;
   font-weight: 600;
+  color: var(--color-primary);
 }
 
 .form-group input,
 .form-group textarea {
   width: 100%;
   padding: 0.8rem;
-  border: 1px solid #ddd;
+  border: 1px solid var(--color-border);
   border-radius: 4px;
   font-size: 1rem;
+  color: var(--color-primary);
 }
 
 .modal-actions {
@@ -229,10 +237,11 @@
 }
 
 .modal-actions button[type="button"] {
-  background: #ddd;
+  background: var(--color-medium-gray);
+  color: var(--color-primary);
 }
 
 .modal-actions button[type="submit"] {
-  background: #ff6600;
-  color: white;
+  background: var(--color-orange);
+  color: var(--color-white);
 }

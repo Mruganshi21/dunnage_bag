@@ -51,6 +51,7 @@
   border-radius: 12px;
   padding: 1.5rem;
   border: 2px solid var(--color-primary);
+  position: relative;
 }
 
 .info-section h3 {
@@ -67,6 +68,46 @@
   color: var(--color-primary);
   margin: 0;
   line-height: 1.5;
+}
+
+.info-section .email-btn {
+  background: none;
+  border: none;
+  color: var(--color-orange);
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  padding: 0;
+  text-align: left;
+  position: relative;
+  z-index: 1;
+  font-family: inherit;
+}
+
+.info-section .email-btn:hover {
+  text-decoration: underline;
+}
+
+.info-section .email-link {
+  color: var(--color-orange);
+  text-decoration: none;
+  cursor: pointer;
+  display: block;
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.info-section .email-link:hover {
+  text-decoration: underline;
+}
+
+.info-section a {
+  color: var(--color-orange);
+  text-decoration: none;
+}
+
+.info-section .email-link:hover {
+  text-decoration: underline;
 }
 
 .contact-form {
@@ -140,7 +181,7 @@
 }
 
 .submit-btn:hover {
-  background: var(--color-orange-dark);
+  background: var(--color-dark-gray);
   transform: translateY(-2px);
 }
 

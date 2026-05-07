@@ -1,6 +1,6 @@
 .eco-section {
   padding: 5rem 2rem;
-  background: #e8f5e9;
+  background: var(--color-light-gray);
 }
 
 .eco-container {
@@ -11,7 +11,7 @@
 
 .eco-badge {
   display: inline-block;
-  background: #4caf50;
+  background: var(--color-orange);
   color: var(--color-white);
   padding: 0.4rem 1rem;
   border-radius: 20px;
@@ -40,9 +40,10 @@
 }
 
 .eco-item {
-  background: #fff;
+  background: var(--color-white);
   padding: 1.8rem 1rem;
   border-radius: 10px;
+  box-shadow: var(--shadow-sm);
 }
 
 .eco-icon {

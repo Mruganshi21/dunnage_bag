@@ -191,13 +191,7 @@
 .feature-card:hover {
   transform: translateY(-5px);
   border-color: var(--color-orange);
-  box-shadow: 0 10px 30px rgba(255, 102, 0, 0.3);
-}
-
-.feature-card:hover {
-  transform: translateY(-5px);
-  border-color: var(--color-orange);
-  box-shadow: 0 10px 30px rgba(255, 102, 0, 0.3);
+  box-shadow: var(--shadow-md);
 }
 
 .feature-icon {

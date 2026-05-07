@@ -1,6 +1,6 @@
 .blog-page {
   padding: 7rem 2rem;
-  background: #ffffff;
+  background: var(--color-white);
 }
 
 .blog-container {
@@ -11,7 +11,7 @@
 .blog-container h2 {
   font-size: 3rem;
   font-weight: 700;
-  color: #000000;
+  color: var(--color-primary);
   margin: 1rem 0 2rem;
 }
 
@@ -24,8 +24,9 @@
 .blog-card {
   border-radius: 12px;
   overflow: hidden;
-  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+  box-shadow: var(--shadow-md);
   transition: transform 0.3s;
+  background: var(--color-white);
 }
 
 .blog-card:hover {
@@ -45,19 +46,19 @@
 .blog-content h3 {
   font-size: 1.3rem;
   font-weight: 700;
-  color: #000000;
+  color: var(--color-primary);
   margin: 0 0 0.8rem;
 }
 
 .blog-content p {
-  color: #555555;
+  color: var(--color-text-light);
   line-height: 1.6;
   margin: 0 0 1rem;
 }
 
 .blog-date {
   font-size: 0.85rem;
-  color: #888888;
+  color: var(--color-medium-gray);
 }
 
 @media (max-width: 768px) {

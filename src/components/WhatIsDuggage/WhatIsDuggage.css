@@ -51,7 +51,7 @@
   flex-direction: column;
   justify-content: center;
   padding: 3rem;
-  background: var(--color-light-gray);
+  background: var(--color-white);
 }
 
 .dunnage-description p {
@@ -84,8 +84,9 @@
 }
 
 .dunnage-btn:hover {
-  background: var(--color-orange-dark);
+  background: var(--color-orange-hover);
   transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
 }
 
 @media (max-width: 768px) {

@@ -27,18 +27,19 @@
 }
 
 .feature-card {
-  background: var(--color-white);
+  background: var(--color-card);
   padding: 2rem;
   border-radius: 12px;
   text-align: center;
   transition: all 0.3s;
-  border: 2px solid var(--color-primary);
+  border: 2px solid;
+  border-color: var(--color-border);
 }
 
 .feature-card:hover {
   transform: translateY(-5px);
   border-color: var(--color-orange);
-  box-shadow: 0 10px 30px rgba(255, 102, 0, 0.3);
+  box-shadow: 0 10px 30px rgba(230, 81, 0, 0.25);
 }
 
 .feature-icon {

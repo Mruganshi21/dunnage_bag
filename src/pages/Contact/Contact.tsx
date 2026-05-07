@@ -12,6 +12,11 @@ const Contact = () => {
   });
   const [status, setStatus] = useState('');
 
+  const sendEmail = () => {
+    // Open directly in Gmail
+    window.open('https://mail.google.com/mail/u/0/?to=sales@dunnage-bag.com&tf=cm', '_blank');
+  };
+
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
@@ -62,8 +67,13 @@ const Contact = () => {
 
             <div className="info-section">
               <h3>Email</h3>
-              <p>sales@dunnage-bag.com</p>
-              <p></p>
+              <button 
+                type="button" 
+                className="email-btn"
+                onClick={sendEmail}
+              >
+                sales@dunnage-bag.com
+              </button>
             </div>
 
             
