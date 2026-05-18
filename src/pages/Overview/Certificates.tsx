@@ -1,7 +1,9 @@
+import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import './Overview.css';
 
 const Certificates = () => {
+  const [selectedCert, setSelectedCert] = useState<null | {title: string; file: string}>(null);
 
   const certificates = [
     {
@@ -34,7 +36,7 @@ const Certificates = () => {
             <div 
               key={cert.id} 
               className="certificate-card"
-              onClick={() => window.open(cert.file, '_blank')}
+              onClick={() => setSelectedCert({ title: cert.title, file: cert.file })}
             >
               <div className="cert-icon">{cert.icon}</div>
               <h3>{cert.title}</h3>
@@ -44,6 +46,22 @@ const Certificates = () => {
           ))}
         </div>
       </div>
+
+      {selectedCert && (
+        <div className="cert-modal" onClick={() => setSelectedCert(null)}>
+          <div className="cert-modal-content" onClick={(e) => e.stopPropagation()}>
+            <button className="cert-close-btn" onClick={() => setSelectedCert(null)}>&times;</button>
+            <div className="cert-image-container">
+              <embed 
+                src={selectedCert.file} 
+                type="application/pdf"
+                width="100%"
+                height="600px"
+              />
+            </div>
+          </div>
+        </div>
+      )}
     </div>
   );
 };

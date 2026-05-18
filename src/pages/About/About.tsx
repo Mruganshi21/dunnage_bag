@@ -109,17 +109,19 @@ In a bid to help our customers order in confidence, we always stand behind our p
 </p>
         </div>
 
-        <div className="about-content">
-          <div className="about-section">
-            <h3>Our Mission</h3>
-            <p>To be India’s Most trusted Manufacturer Of Dunnage Air Bags to meet international quality standards, at competitive price, with unwavering commitment to on-time delivery and 100% customer satisfaction.
+<div className="about-content">
+          <div className="about-sections-row">
+            <div className="about-section">
+              <h3>Our Mission</h3>
+              <p>To be India's Most trusted Manufacturer Of Dunnage Air Bags to meet international quality standards, at competitive price, with unwavering commitment to on-time delivery and 100% customer satisfaction.
 </p>
-          </div>
+            </div>
 
-          <div className="about-section">
-            <h3>Our Vision</h3>
-            <p>To emerge as a globally recognized leader in Packaging material, empowering businesses of every scale to ship with confidence – by continuously innovating, maintaining the highest product quality and building lasting partnerships rooted in reliability and value. 
+            <div className="about-section">
+              <h3>Our Vision</h3>
+              <p>To emerge as a globally recognized leader in Packaging material, empowering businesses of every scale to ship with confidence – by continuously innovating, maintaining the highest product quality and building lasting partnerships rooted in reliability and value. 
 </p>
+            </div>
           </div>
 
           <div className="about-footer">

@@ -1,6 +1,13 @@
 import { useState, useEffect } from 'react';
 import { Link, useSearchParams } from 'react-router-dom';
 import './Products.css';
+import plasticImage from '../assets/plastic.jpg';
+import paperImage from '../assets/paper bag.png';
+import normalImage from '../assets/normal.png';
+import twinBagImage from '../assets/twin bag.jpg';
+import toolsImage1 from '../assets/tools/ChatGPT Image May 16, 2026, 02_59_18 PM.png';
+import toolsImage2 from '../assets/tools/ChatGPT Image May 16, 2026, 03_00_48 PM.png';
+import toolsImage3 from '../assets/tools/ChatGPT Image May 16, 2026, 03_06_35 PM.png';
 
 const Products = () => {
   const [searchParams, setSearchParams] = useSearchParams();
@@ -26,32 +33,32 @@ const Products = () => {
       id: 'plastic',
       name: 'PP Air Dunnage Bag',
       description: 'Durable, reusable and water-resistant packaging material',
-      image: 'https://images.unsplash.com/photo-1589939705384-518513476a87?w=400',
+      image: plasticImage,
       products: [
-        { name: 'Regular', image: 'https://images.unsplash.com/photo-1607166452427-7e5c4c5f8b7c?w=300', features: ['Air-cushioned protection', 'Reusable', 'Water-resistant'], benefits: ['Prevents scratches', 'Lightweight', 'Adjustable'], subOptions: ['Small bubbles', 'Large bubbles', 'Anti-static'] },
-        { name: 'Gazzeted', image: 'https://images.unsplash.com/photo-1607166452427-7e5c4c5f8b7c?w=300', features: ['Inflatable', 'Lightweight', 'Reusable'], benefits: ['Fills voids', 'Cost effective', 'Quick to use'], subOptions: ['Small', 'Medium', 'Large'] },
-        { name: 'Twin Bag', image: 'https://images.unsplash.com/photo-1607166452427-7e5c4c5f8b7c?w=300', features: ['Soft padding', 'Customizable', 'Non-abrasive'], benefits: ['Surface protection', 'Easy to cut', 'Versatile'], subOptions: ['Thin', 'Medium', 'Thick'] }
+        { name: 'Regular', image: normalImage, features: ['Air-cushioned protection', 'Reusable', 'Water-resistant'], benefits: ['Prevents scratches', 'Lightweight', 'Adjustable'], subOptions: ['Small bubbles', 'Large bubbles', 'Anti-static'] },
+        { name: 'Gazzeted', image: plasticImage, features: ['Inflatable', 'Lightweight', 'Reusable'], benefits: ['Fills voids', 'Cost effective', 'Quick to use'], subOptions: ['Small', 'Medium', 'Large'] },
+        { name: 'Twin Bag', image: twinBagImage, features: ['Soft padding', 'Customizable', 'Non-abrasive'], benefits: ['Surface protection', 'Easy to cut', 'Versatile'], subOptions: ['Thin', 'Medium', 'Thick'] }
       ]
     },
     {
       id: 'paper',
       name: 'Paper Air Dunnage Bag',
       description: 'Eco-friendly and biodegradable packaging solution',
-      image: 'https://images.unsplash.com/photo-1607171015217-5f506c8e0139?w=400',
+      image: paperImage,
       products: [
-        { name: 'Laminated Paper', image: 'https://images.unsplash.com/photo-1607171015217-5f506c8e0139?w=300', features: ['100% recyclable', 'Biodegradable', 'Strong cushioning'], benefits: ['Eco-friendly', 'Cost effective', 'Static-free'], subOptions: ['Standard Weight'] },
-        { name: '2 Ply Kraft Paper', image: 'https://images.unsplash.com/photo-1607171015217-5f506c8e0139?w=300', features: ['100% recyclable', 'Biodegradable', 'Strong cushioning'], benefits: ['Eco-friendly', 'Cost effective', 'Static-free'], subOptions: ['Standard Weight'] },
+        { name: 'Laminated Paper', image: paperImage, features: ['100% recyclable', 'Biodegradable', 'Strong cushioning'], benefits: ['Eco-friendly', 'Cost effective', 'Static-free'], subOptions: ['Standard Weight'] },
+        { name: '2 Ply Kraft Paper', image: paperImage, features: ['100% recyclable', 'Biodegradable', 'Strong cushioning'], benefits: ['Eco-friendly', 'Cost effective', 'Static-free'], subOptions: ['Standard Weight'] },
       ]
     },
     {
       id: 'tools',
       name: 'Tools & Equipment',
       description: 'Essential tools for efficient packaging operations',
-      image: 'https://images.unsplash.com/photo-1535280361539-47d3da4d5a1a?w=400',
+      image: toolsImage1,
       products: [
-        { name: 'Pneumatic Air Inflator Tool', image: 'https://images.unsplash.com/photo-1535280361539-47d3da4d5a1a?w=300', features: ['Easy to use', 'Adjustable', 'Durable'], benefits: ['Faster packing', 'Less waste', 'Professional'], subOptions: ['Manual', 'Auto-cut'] },
-        { name: 'Electric Blower With Attachment', image: 'https://images.unsplash.com/photo-1535280361539-47d3da4d5a1a?w=300', features: ['Quick sealing', 'Consistent', 'Reliable'], benefits: ['Secure closure', 'Time saving', 'Clean finish'], subOptions: ['Handheld', 'Desktop'] },
-        { name: 'Battery Operated Blower With Attachment', image: 'https://images.unsplash.com/photo-1535280361539-47d3da4d5a1a?w=300', features: ['Easy to use', 'Adjustable', 'Durable'], benefits: ['Faster packing', 'Less waste', 'Professional'], subOptions: ['Manual', 'Auto-cut'] },
+        { name: 'Pneumatic Air Inflator Tool', image: toolsImage1, features: ['Easy to use', 'Adjustable', 'Durable'], benefits: ['Faster packing', 'Less waste', 'Professional'], subOptions: ['Manual', 'Auto-cut'] },
+        { name: 'Electric Blower With Attachment', image: toolsImage2, features: ['Quick sealing', 'Consistent', 'Reliable'], benefits: ['Secure closure', 'Time saving', 'Clean finish'], subOptions: ['Handheld', 'Desktop'] },
+        { name: 'Battery Operated Blower With Attachment', image: toolsImage3, features: ['Easy to use', 'Adjustable', 'Durable'], benefits: ['Faster packing', 'Less waste', 'Professional'], subOptions: ['Manual', 'Auto-cut'] },
       ]
     }
   ];
