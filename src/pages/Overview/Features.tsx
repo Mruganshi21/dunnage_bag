@@ -1,37 +1,41 @@
 import { Link } from 'react-router-dom';
 import './Overview.css';
+import one from '../../assets/features/one.png';
+import two from '../../assets/features/two.png';
+import three from '../../assets/features/three.png';
+import four from '../../assets/features/four.png';
 
 const Features = () => {
   const featuresData = [
     {
       title: '100% Virgin & Recyclable',
       description: 'Made from 100% virgin & recyclable outer material for sustainable packaging.',
-      icon: '♻️'
+      image: one
     },
     {
       title: 'Multilayer Film Technology',
       description: 'Multilayer film for long lasting air holding characteristic.',
-      icon: '🔒'
+      image: two
     },
     {
       title: 'Imported Spring Valve',
       description: 'Universally approved imported spring valve for reliable performance.',
-      icon: '✓'
+      image: three
     },
     {
       title: 'Double Folding & Stitching',
       description: 'Double folding and double stitching finishing for extra safety.',
-      icon: '🛡️'
+      image: four
     },
     {
       title: 'Quality Assured',
       description: 'Each and every bag checked physically before dispatch to assure zero leakage.',
-      icon: '✅'
+      image: one
     },
     {
       title: 'Customizable Sizes',
       description: 'Available in multiple sizes and specifications to meet specific cargo requirements.',
-      icon: '📏'
+      image: two
     }
   ];
 
@@ -46,9 +50,11 @@ const Features = () => {
         <div className="features-grid">
           {featuresData.map((item, index) => (
             <div key={index} className="feature-card">
-              <span className="feature-icon">{item.icon}</span>
-              <h3>{item.title}</h3>
-              <p>{item.description}</p>
+              <img src={item.image} alt={item.title} className="feature-image" />
+              <div className="feature-card-body">
+                <h3>{item.title}</h3>
+                <p>{item.description}</p>
+              </div>
             </div>
           ))}
         </div>

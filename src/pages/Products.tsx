@@ -3,7 +3,7 @@ import { Link, useSearchParams } from 'react-router-dom';
 import './Products.css';
 import plasticImage from '../assets/plastic.jpg';
 import paperImage from '../assets/paper bag.png';
-import normalImage from '../assets/normal.png';
+import gazzated from '../assets/gazzated.png';
 import twinBagImage from '../assets/twin bag.jpg';
 import toolsImage1 from '../assets/tools/ChatGPT Image May 16, 2026, 02_59_18 PM.png';
 import toolsImage2 from '../assets/tools/ChatGPT Image May 16, 2026, 03_00_48 PM.png';
@@ -35,7 +35,7 @@ const Products = () => {
       description: 'Durable, reusable and water-resistant packaging material',
       image: plasticImage,
       products: [
-        { name: 'Regular', image: normalImage, features: ['Air-cushioned protection', 'Reusable', 'Water-resistant'], benefits: ['Prevents scratches', 'Lightweight', 'Adjustable'], subOptions: ['Small bubbles', 'Large bubbles', 'Anti-static'] },
+        { name: 'Regular', image: gazzated, features: ['Air-cushioned protection', 'Reusable', 'Water-resistant'], benefits: ['Prevents scratches', 'Lightweight', 'Adjustable'], subOptions: ['Small bubbles', 'Large bubbles', 'Anti-static'] },
         { name: 'Gazzeted', image: plasticImage, features: ['Inflatable', 'Lightweight', 'Reusable'], benefits: ['Fills voids', 'Cost effective', 'Quick to use'], subOptions: ['Small', 'Medium', 'Large'] },
         { name: 'Twin Bag', image: twinBagImage, features: ['Soft padding', 'Customizable', 'Non-abrasive'], benefits: ['Surface protection', 'Easy to cut', 'Versatile'], subOptions: ['Thin', 'Medium', 'Thick'] }
       ]
@@ -56,9 +56,9 @@ const Products = () => {
       description: 'Essential tools for efficient packaging operations',
       image: toolsImage1,
       products: [
-        { name: 'Pneumatic Air Inflator Tool', image: toolsImage1, features: ['Easy to use', 'Adjustable', 'Durable'], benefits: ['Faster packing', 'Less waste', 'Professional'], subOptions: ['Manual', 'Auto-cut'] },
         { name: 'Electric Blower With Attachment', image: toolsImage2, features: ['Quick sealing', 'Consistent', 'Reliable'], benefits: ['Secure closure', 'Time saving', 'Clean finish'], subOptions: ['Handheld', 'Desktop'] },
-        { name: 'Battery Operated Blower With Attachment', image: toolsImage3, features: ['Easy to use', 'Adjustable', 'Durable'], benefits: ['Faster packing', 'Less waste', 'Professional'], subOptions: ['Manual', 'Auto-cut'] },
+         { name: 'Battery Operated Blower With Attachment', image: toolsImage3, features: ['Easy to use', 'Adjustable', 'Durable'], benefits: ['Faster packing', 'Less waste', 'Professional'], subOptions: ['Manual', 'Auto-cut'] },
+        { name: 'Pneumatic Air Inflator Tool', image: toolsImage1, features: ['Easy to use', 'Adjustable', 'Durable'], benefits: ['Faster packing', 'Less waste', 'Professional'], subOptions: ['Manual', 'Auto-cut'] },
       ]
     }
   ];

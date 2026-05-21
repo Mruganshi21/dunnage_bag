@@ -35,6 +35,90 @@
   line-height: 1.8;
 }
 
+.about-hero {
+  display: grid;
+  grid-template-columns: minmax(0, 1.5fr) minmax(280px, 1fr);
+  gap: 2rem;
+  align-items: start;
+  padding: 0 1rem 2rem;
+}
+
+.about-hero-copy,
+.about-hero-cards {
+  background: var(--color-card);
+  border-radius: 20px;
+  border: 1px solid var(--color-border);
+  box-shadow: var(--shadow-md);
+}
+
+.about-hero-copy {
+  padding: 2.5rem;
+}
+
+.about-hero-copy h3 {
+  font-size: 2.2rem;
+  margin: 0 0 1rem;
+  color: var(--color-primary);
+}
+
+.about-hero-copy p {
+  font-size: 1rem;
+  line-height: 1.9;
+  color: var(--color-text);
+  margin: 0 0 1.8rem;
+}
+
+.about-hero-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: 1rem;
+}
+
+.about-hero-list li {
+  position: relative;
+  padding-left: 2rem;
+  font-size: 0.97rem;
+  color: var(--color-text);
+}
+
+.about-hero-list li::before {
+  content: '✔';
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: var(--color-orange);
+  font-weight: 700;
+}
+
+.about-hero-cards {
+  padding: 1.5rem;
+  display: grid;
+  gap: 1rem;
+}
+
+.hero-summary-card {
+  background: var(--color-white);
+  border-radius: 18px;
+  padding: 1.75rem;
+  border: 1px solid var(--color-border);
+  box-shadow: var(--shadow-sm);
+}
+
+.hero-summary-card h4 {
+  margin: 0 0 0.8rem;
+  color: var(--color-primary);
+  font-size: 1.1rem;
+}
+
+.hero-value {
+  font-size: 2rem;
+  font-weight: 800;
+  color: var(--color-orange);
+  margin-bottom: 0.75rem;
+}
+
 .about-content {
   display: flex;
   flex-direction: column;
@@ -69,8 +153,36 @@
   margin: 0;
 }
 
+.about-impact {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.5rem;
+  padding: 0 1rem;
+  margin-top: 2rem;
+}
+
+.impact-card {
+  background: var(--color-white);
+  border-radius: 18px;
+  padding: 2rem;
+  border: 1px solid var(--color-border);
+  box-shadow: var(--shadow-sm);
+}
+
+.impact-card h4 {
+  margin: 0 0 0.75rem;
+  font-size: 1.15rem;
+  color: var(--color-primary);
+}
+
+.impact-card p {
+  margin: 0;
+  color: var(--color-text);
+  line-height: 1.7;
+}
+
 .about-footer {
-  margin-top: 0.5rem;
+  margin-top: 2rem;
   padding: 0 1rem;
 }
 
@@ -106,6 +218,17 @@
   object-fit: contain;
 }
 
+@media (max-width: 992px) {
+  .about-hero {
+    grid-template-columns: 1fr;
+  }
+
+  .about-hero-copy,
+  .about-hero-cards {
+    padding: 1.75rem;
+  }
+}
+
 @media (max-width: 768px) {
   .about-page {
     padding: 3rem 1rem 4rem;
@@ -124,8 +247,18 @@
     gap: 1rem;
   }
 
+  .about-hero,
+  .about-impact {
+    grid-template-columns: 1fr;
+  }
+
   .about-section {
     padding: 1.25rem 1.5rem;
+  }
+
+  .hero-summary-card,
+  .impact-card {
+    padding: 1.5rem;
   }
 
   .companies-links {

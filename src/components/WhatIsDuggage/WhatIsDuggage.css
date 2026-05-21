@@ -59,16 +59,16 @@
   background: var(--color-white);
 }
 
-.dunnage-description p {
-  font-size: 1.25rem;
+.dunnage-description h2 {
+  font-size: 2rem;
   font-weight: 500;
   color: var(--color-text);
   line-height: 1.6;
   margin: 0 0 1.5rem;
 }
 
-.dunnage-description h3 {
-  font-size: 1.5rem;
+.dunnage-description h2 {
+  font-size: 2rem;
   font-weight: 700;
   color: var(--color-primary);
   margin: 0 0 0.8rem;

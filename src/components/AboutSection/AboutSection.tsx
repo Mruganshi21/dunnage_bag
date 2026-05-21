@@ -19,7 +19,7 @@ const AboutSection = () => {
 Established In 2010, Dunnage Bag Pvt. Ltd. Is A Leading Manufacturer Of Air Dunnage Bags With Headquarter & Production Plant In Bharuch Gujarat, India.
           </p>
           <button className="about-btn" onClick={() => setShowFullAbout(true)}>
-            Learn Our Story
+           Our Story
           </button>
         </div>
       </div>
@@ -28,7 +28,7 @@ Established In 2010, Dunnage Bag Pvt. Ltd. Is A Leading Manufacturer Of Air Dunn
         <div className="about-modal" onClick={() => setShowFullAbout(false)}>
           <div className="about-modal-content" onClick={(e) => e.stopPropagation()}>
             <button className="close-btn" onClick={() => setShowFullAbout(false)}>&times;</button>
-            <h2></h2>
+            <h2>Our Story</h2>
             <p>Stuffex™ Air Dunnage Bags are engineered to deliver superior cargo stabilization, load protection, and transport safety across all modes of logistics — road, rail, sea, and intermodal shipping.</p>
 
 <p>Manufactured using multi-layer co-extruded polyethylene (PE) inner bladders combined with high-strength woven polypropylene (PP) or kraft paper exteriors, Stuffex™ Air Dunnage Bags are designed to prevent load shifting, damage, and collapse during transit.</p>

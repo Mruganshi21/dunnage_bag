@@ -11,14 +11,14 @@ const Certificates = () => {
       title: 'ISO 9001:2015',
       description: 'Quality Management System Certification',
       icon: '🏆',
-      file: '/src/assets/ISO-9001-CERTIFICATE.pdf'
+      file: 'D:\duggage-bag\src\assets\certificates\ISO-9001-CERTIFICATE_page-0001.jpg'
     },
     {
       id: 2,
-      title: 'DBPL AAR Certificate',
+      title: ' AAR Certificate',
       description: 'Dunnage Bag Private Limited - AAR Certification',
       icon: '📜',
-      file: '/src/assets/DBPL-AAR-CERTIFICATE.pdf'
+      file: 'D:\duggage-bag\src\assets\certificates\DBPL-AAR-CERTIFICATE_page-0001.jpg'
     }
   ];
 
@@ -54,7 +54,7 @@ const Certificates = () => {
             <div className="cert-image-container">
               <embed 
                 src={selectedCert.file} 
-                type="application/pdf"
+                type="application/jpeg"
                 width="100%"
                 height="600px"
               />

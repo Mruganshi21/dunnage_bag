@@ -7,8 +7,7 @@ const WhatIsDuggage = () => {
     <section className="what-is-section">
       <div className="what-is-container">
         <div className="what-is-header">
-          <h2>Why Choose Air Dunnage Bag</h2>
-          <p>For Securing Cargo While Transporting Goods</p>
+          <h1>Why Choose Air Dunnage Bag?</h1>
         </div>
 
         <div className="dunnage-info">
