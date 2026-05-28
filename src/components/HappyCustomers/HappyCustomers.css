@@ -1,6 +1,8 @@
 .happy-customers-section {
-  padding: 3rem 2rem;
-  background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-secondary) 50%, var(--color-orange) 150%);
+  padding: 4rem 2rem;
+  background: var(--color-off-white);
+  border-top: 1px solid var(--color-border);
+  border-bottom: 1px solid var(--color-border);
 }
 
 .happy-customers-container {
@@ -23,15 +25,18 @@
 
 .stat-number {
   font-size: 3rem;
-  font-weight: 700;
-  color: var(--color-white);
+  font-weight: 800;
+  color: var(--color-orange);
+  letter-spacing: -0.03em;
 }
 
 .stat-label {
   font-size: 1.1rem;
-  color: var(--color-orange-light);
+  color: var(--color-text);
   font-weight: 600;
   margin: 0.3rem 0;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
 }
 
 .stat-sub {

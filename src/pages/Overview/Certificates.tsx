@@ -54,12 +54,7 @@ const Certificates = () => {
           <div className="cert-modal-content" onClick={(e) => e.stopPropagation()}>
             <button className="cert-close-btn" onClick={() => setSelectedCert(null)}>&times;</button>
             <div className="cert-image-container">
-              <embed 
-                src={selectedCert.file} 
-                type="application/jpeg"
-                width="100%"
-                height="600px"
-              />
+              <img src={selectedCert.file} alt={selectedCert.title} />
             </div>
           </div>
         </div>
