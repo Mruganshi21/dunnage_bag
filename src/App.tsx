@@ -3,7 +3,7 @@ import './App.css';
 import Header from './components/Header/Header';
 import Hero from './components/Hero/Hero';
 import AboutSection from './components/AboutSection/AboutSection';
-import WhatIsDuggage from './components/WhatIsDuggage/WhatIsDuggage';
+import WhatIsDunnage from './components/WhatIsDunnage/WhatIsDunnage';
 import HappyCustomers from './components/HappyCustomers/HappyCustomers';
 import Products from './pages/Products';
 import About from './pages/About/About';
@@ -27,7 +27,7 @@ function App() {
             <>
               <Hero />
               <AboutSection />
-              <WhatIsDuggage />
+              <WhatIsDunnage />
               <HappyCustomers />
             </>
           } />

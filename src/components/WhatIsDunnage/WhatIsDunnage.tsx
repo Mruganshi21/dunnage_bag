@@ -1,8 +1,8 @@
 import { Link } from 'react-router-dom';
 import dunnageImage from '../../assets/whatisdunnagebag.png';
-import './WhatIsDuggage.css';
+import './WhatIsDunnage.css';
 
-const WhatIsDuggage = () => {
+const WhatIsDunnage = () => {
   return (
     <section className="what-is-section">
       <div className="what-is-container">
@@ -31,4 +31,4 @@ const WhatIsDuggage = () => {
   );
 };
 
-export default WhatIsDuggage;
+export default WhatIsDunnage;

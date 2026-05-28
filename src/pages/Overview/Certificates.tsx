@@ -1,6 +1,8 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import './Overview.css';
+import isoCert from '../../assets/certificates/ISO-9001-CERTIFICATE_page-0001.jpg';
+import aarCert from '../../assets/certificates/DBPL-AAR-CERTIFICATE_page-0001.jpg';
 
 const Certificates = () => {
   const [selectedCert, setSelectedCert] = useState<null | {title: string; file: string}>(null);
@@ -11,14 +13,14 @@ const Certificates = () => {
       title: 'ISO 9001:2015',
       description: 'Quality Management System Certification',
       icon: '🏆',
-      file: 'D:\duggage-bag\src\assets\certificates\ISO-9001-CERTIFICATE_page-0001.jpg'
+      file: isoCert
     },
     {
       id: 2,
       title: ' AAR Certificate',
       description: 'Dunnage Bag Private Limited - AAR Certification',
       icon: '📜',
-      file: 'D:\duggage-bag\src\assets\certificates\DBPL-AAR-CERTIFICATE_page-0001.jpg'
+      file: aarCert
     }
   ];
 

@@ -1,11 +1,11 @@
 import { useState, useEffect } from 'react';
 import './Hero.css';
-import image1 from '../../assets/homepage/ChatGPT Image May 16, 2026, 02_04_55 PM.png';
-import image2 from '../../assets/homepage/ChatGPT Image May 16, 2026, 02_24_34 PM.png';
-import image3 from '../../assets/homepage/home_page.png';
+import slide1 from '../../assets/homepage/slider_1.png';
+import slide2 from '../../assets/homepage/slider_2.png';
+import slide3 from '../../assets/homepage/slider_3.png';
 
 const Hero = () => {
-  const slides = [image1, image2, image3];
+  const slides = [slide1, slide2, slide3];
   const [currentSlide, setCurrentSlide] = useState(0);
 
   useEffect(() => {

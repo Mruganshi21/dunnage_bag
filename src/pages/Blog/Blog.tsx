@@ -20,7 +20,7 @@ const Blog = () => {
 
   const fetchBlogs = async () => {
     try {
-      const res = await fetch('http://localhost:5000/api/blogs');
+      const res = await fetch('/api/blogs');
       const data = await res.json();
       setBlogs(data);
     } catch (error) {

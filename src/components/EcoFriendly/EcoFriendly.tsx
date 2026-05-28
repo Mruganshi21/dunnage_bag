@@ -6,7 +6,7 @@ const EcoFriendly = () => {
       <div className="eco-container">
         <span className="eco-badge">🌱 Eco-Friendly</span>
         <h2>Sustainable Packaging</h2>
-        <p>Our duggage bags are made from 100% recycled materials and are fully biodegradable. Pack with peace knowing you're helping the environment.</p>
+        <p>Our dunnage bags are made from 100% recycled materials and are fully biodegradable. Pack with peace knowing you're helping the environment.</p>
         
         <div className="eco-features">
           <div className="eco-item">

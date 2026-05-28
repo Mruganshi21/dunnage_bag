@@ -20,8 +20,8 @@ const PackagingCalculator = () => {
       const bags = Math.ceil(volume / 1000);
       setResult({
         bags: bags,
-        recommendation: volume < 5000 ? 'Standard Duggage Bag' : 
-                     volume < 15000 ? 'Heavy-Duty Duggage Bag' : 'Compact Roll'
+        recommendation: volume < 5000 ? 'Standard Dunnage Bag' : 
+                     volume < 15000 ? 'Heavy-Duty Dunnage Bag' : 'Compact Roll'
       });
     }
   };
@@ -30,7 +30,7 @@ const PackagingCalculator = () => {
     <section className="calculator-section">
       <div className="calculator-container">
         <h2>Packaging Calculator</h2>
-        <p>Enter your box dimensions to find the right duggage</p>
+        <p>Enter your box dimensions to find the right dunnage</p>
         
         <div className="calculator-inputs">
           <div className="input-group">
