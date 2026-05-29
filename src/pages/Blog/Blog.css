@@ -68,5 +68,36 @@
   
   .blogs-grid {
     grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .blog-page {
+    padding: 5rem 1.5rem;
+  }
+
+  .blog-image img {
+    height: 180px;
+  }
+}
+
+@media (max-width: 480px) {
+  .blog-page {
+    padding: 3rem 1rem;
+  }
+
+  .blog-container h2 {
+    font-size: 1.5rem;
+  }
+
+  .blog-image img {
+    height: 160px;
+  }
+
+  .blog-content {
+    padding: 1rem;
+  }
+
+  .blog-content h3 {
+    font-size: 1.1rem;
   }
 }

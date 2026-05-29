@@ -86,5 +86,19 @@
 @media (max-width: 450px) {
   .gallery-grid {
     grid-template-columns: 1fr;
+    gap: 1.5rem;
+    padding: 0.5rem;
+  }
+
+  .gallery-header p {
+    font-size: 0.95rem;
+  }
+
+  .gallery-item img {
+    box-shadow: 8px 8px 0 0 var(--color-orange);
+  }
+
+  .gallery-item:hover img {
+    box-shadow: 6px 6px 0 0 var(--color-orange), var(--shadow-lg);
   }
 }

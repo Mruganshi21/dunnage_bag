@@ -64,8 +64,36 @@
   margin: 0;
 }
 
+@media (max-width: 900px) {
+  .eco-features {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
 @media (max-width: 700px) {
   .eco-features {
     grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .eco-section {
+    padding: 3rem 1rem;
+  }
+
+  .eco-container h2 {
+    font-size: 1.5rem;
+  }
+
+  .eco-container > p {
+    font-size: 0.9rem;
+  }
+
+  .eco-item {
+    padding: 1.2rem 0.8rem;
+  }
+
+  .eco-features {
+    gap: 1rem;
   }
 }

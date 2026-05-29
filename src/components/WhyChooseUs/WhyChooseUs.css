@@ -73,12 +73,28 @@
   }
 }
 
+@media (max-width: 768px) {
+  .why-choose-section {
+    height: auto;
+    min-height: calc(100dvh - 90px);
+    padding: 2rem 1.5rem;
+  }
+}
+
 @media (max-width: 500px) {
   .features-grid {
     grid-template-columns: 1fr;
   }
   
   .why-choose-header h2 {
-    font-size: 2rem;
+    font-size: 1.5rem;
+  }
+
+  .why-choose-section {
+    padding: 1.5rem 1rem;
+  }
+
+  .feature-card {
+    padding: 0.8rem;
   }
 }

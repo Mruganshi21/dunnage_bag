@@ -263,4 +263,48 @@
   .products-header h2 {
     font-size: 2rem;
   }
+
+  .category-image,
+  .product-image {
+    height: 220px;
+  }
+
+  .product-content {
+    padding: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .products-page {
+    padding: 3rem 1rem 5rem;
+  }
+
+  .products-header h2 {
+    font-size: 1.6rem;
+  }
+
+  .products-header p {
+    font-size: 0.95rem;
+  }
+
+  .category-image,
+  .product-image {
+    height: 180px;
+  }
+
+  .category-card h3 {
+    font-size: 1.2rem;
+  }
+
+  .product-content {
+    padding: 1rem;
+  }
+
+  .product-content h4 {
+    font-size: 1.1rem;
+  }
+
+  .products-grid.single-product .product-image {
+    height: 280px;
+  }
 }

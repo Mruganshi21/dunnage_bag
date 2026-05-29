@@ -198,10 +198,40 @@
     opacity: 0;
     pointer-events: none;
     transition: all 0.3s;
+    box-shadow: var(--shadow-lg);
   }
   .nav.open {
     transform: translateY(0);
     opacity: 1;
     pointer-events: all;
+  }
+
+  .header-logo {
+    height: 60px;
+    width: 160px;
+  }
+}
+
+@media (max-width: 480px) {
+  .header-container {
+    padding: 0 1rem;
+  }
+
+  .header-logo {
+    height: 45px;
+    width: 120px;
+  }
+
+  .company-name,
+  .company-sub {
+    font-size: 1.1rem;
+  }
+
+  .nav {
+    padding: 0.8rem 1rem;
+  }
+
+  .dropdown-menu {
+    min-width: 160px;
   }
 }

@@ -218,4 +218,38 @@
   .contact-header h2 {
     font-size: 2rem;
   }
+
+  .map-container {
+    min-height: 250px;
+  }
+}
+
+@media (max-width: 480px) {
+  .contact-page {
+    padding: 3rem 1rem 5rem;
+  }
+
+  .contact-header h2 {
+    font-size: 1.5rem;
+  }
+
+  .contact-header p {
+    font-size: 0.95rem;
+  }
+
+  .info-section {
+    padding: 1rem;
+  }
+
+  .contact-form {
+    padding: 1.5rem;
+  }
+
+  .contact-form h3 {
+    font-size: 1.2rem;
+  }
+
+  .map-container {
+    min-height: 180px;
+  }
 }

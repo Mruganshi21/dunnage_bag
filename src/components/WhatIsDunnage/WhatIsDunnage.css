@@ -110,4 +110,36 @@
   .what-is-header h2 {
     font-size: 2rem;
   }
+
+  .dunnage-btn {
+    padding: 0.8rem 2rem;
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .what-is-section {
+    padding: 3rem 1rem;
+  }
+
+  .what-is-header h2 {
+    font-size: 1.5rem;
+  }
+
+  .dunnage-image img {
+    height: 220px;
+  }
+
+  .dunnage-description {
+    padding: 1.5rem;
+  }
+
+  .dunnage-description p {
+    font-size: 0.9rem;
+  }
+
+  .dunnage-btn {
+    padding: 0.7rem 1.5rem;
+    font-size: 0.9rem;
+  }
 }
