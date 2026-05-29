@@ -4,6 +4,7 @@ import './Overview.css';
 import isoCert from '../../assets/certificates/ISO-9001-CERTIFICATE_page-0001.jpg';
 import aarCert from '../../assets/certificates/DBPL-AAR-CERTIFICATE_page-0001.jpg';
 import aarIcon from '../../assets/certificates/AAR.png';
+import isoIcon from '../../assets/certificates/ISO_9001-2015.svg.png';
 
 const Certificates = () => {
   const [selectedCert, setSelectedCert] = useState<null | {title: string; file: string}>(null);
@@ -13,7 +14,7 @@ const Certificates = () => {
       id: 1,
       title: 'ISO 9001:2015',
       description: 'Quality Management System Certification',
-      icon: '🏆',
+      icon: isoIcon,
       file: isoCert
     },
     {
@@ -41,13 +42,9 @@ const Certificates = () => {
               className="certificate-card"
               onClick={() => setSelectedCert({ title: cert.title, file: cert.file })}
             >
-              {cert.id === 2 ? (
-                <div className="cert-icon">
-                  <img src={cert.icon} alt={cert.title} style={{ width: '60px', height: '60px', objectFit: 'contain' }} />
-                </div>
-              ) : (
-                <div className="cert-icon">{cert.icon}</div>
-              )}
+              <div className="cert-icon">
+                <img src={cert.icon} alt={cert.title} style={{ width: '60px', height: '60px', objectFit: 'contain' }} />
+              </div>
               <h3>{cert.title}</h3>
               <p>{cert.description}</p>
               <span className="view-cert">Click to view →</span>
