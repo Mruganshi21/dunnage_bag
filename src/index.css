@@ -75,3 +75,15 @@ button {
   display: flex;
   flex-direction: column;
 }
+
+@media (min-width: 1600px) {
+  html {
+    font-size: 15px;
+  }
+}
+
+@media (min-width: 1920px) {
+  html {
+    font-size: 14px;
+  }
+}
