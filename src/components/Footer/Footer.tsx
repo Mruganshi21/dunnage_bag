@@ -16,7 +16,7 @@ const Footer = () => {
           <p>Plot No: 157/3, Phase-II, Bharuch GIDC Estate, Next to SMP House, Bharuch-392001, Gujarat.</p>
         </div>
         <div className="footer-copyright">
-          <p>&copy; {new Date().getFullYear()} Stuffex. All rights reserved.</p>
+          <p>&copy; {new Date().getFullYear()} Dunnage Bag Pvt. Ltd. All rights reserved.</p>
         </div>
       </div>
     </footer>
