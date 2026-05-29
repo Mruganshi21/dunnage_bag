@@ -43,7 +43,7 @@ const Certificates = () => {
               onClick={() => setSelectedCert({ title: cert.title, file: cert.file })}
             >
               <div className="cert-icon">
-                <img src={cert.icon} alt={cert.title} style={{ width: '60px', height: '60px', objectFit: 'contain' }} />
+                <img src={cert.icon} alt={cert.title} />
               </div>
               <h3>{cert.title}</h3>
               <p>{cert.description}</p>

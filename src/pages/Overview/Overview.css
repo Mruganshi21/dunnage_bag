@@ -510,14 +510,21 @@
 }
 
 .cert-icon {
-  font-size: 4rem;
   margin-bottom: 1.5rem;
-  display: inline-block;
-  width: 100px;
-  height: 100px;
-  line-height: 100px;
-  background: var(--color-orange-light);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 120px;
+  height: 120px;
+  background: var(--color-white);
   border-radius: 50%;
+  border: 2px solid var(--color-border);
+}
+
+.cert-icon img {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
 }
 
 .certificate-card h3 {
