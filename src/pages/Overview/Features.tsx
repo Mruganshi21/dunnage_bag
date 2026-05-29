@@ -4,6 +4,8 @@ import one from '../../assets/features/one.png';
 import two from '../../assets/features/two.png';
 import three from '../../assets/features/three.png';
 import four from '../../assets/features/four.png';
+import five from '../../assets/features/five.png';
+import six from '../../assets/features/six.png';
 
 const Features = () => {
   const featuresData = [
@@ -30,12 +32,12 @@ const Features = () => {
     {
       title: 'Quality Assured',
       description: 'Each and every bag checked physically before dispatch to assure zero leakage.',
-      image: one
+      image: five
     },
     {
       title: 'Customizable Sizes',
       description: 'Available in multiple sizes and specifications to meet specific cargo requirements.',
-      image: two
+      image: six
     }
   ];
 

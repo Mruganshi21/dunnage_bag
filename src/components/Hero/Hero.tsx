@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import './Hero.css';
-import slide1 from '../../assets/homepage/slider_1.png';
+import slide1 from '../../assets/homepage/sider_1.png';
 import slide2 from '../../assets/homepage/slider_2.png';
 import slide3 from '../../assets/homepage/slider_3.png';
 

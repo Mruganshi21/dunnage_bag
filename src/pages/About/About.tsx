@@ -9,27 +9,27 @@ const About = () => {
       <section className="about-hero">
         <div className="about-hero-overlay" />
         <div className="about-hero-content">
-          <Link to="/" className="about-breadcrumb">Home / About Us</Link>
+          
           <h1>About Us</h1>
           <p className="about-hero-description">
-            Dunnage Bag Pvt. Ltd. was established in 2010 in Bharuch,
+            <h3>Dunnage Bag Pvt. Ltd. was established in 2010 in Bharuch,
 Gujarat, with a clear purpose — to redefine how India
-approaches export packaging and cargo protection.
-<br /><br />
-Over the past 14+ years, we have grown from a regional
+approaches export packaging and cargo protection.</h3>
+<br />
+<h3>Over the past 14+ years, we have grown from a regional
 supplier into one of India's most professional, progressive,
 and punctual industry in the Dunnage Air Bags
-Manufacturing.
-<br /><br />
-Our products are precisely manufactured by following high
+Manufacturing.</h3>
+<br />
+<h3>Our products are precisely manufactured by following high
 quality standards for best performance matching
 international standards. We understand that our success is
 dependent upon yours. We offer top quality packaging
-materials at competitive prices.
-<br /><br />
-In a bid to help our customers order in confidence, we
+materials at competitive prices.</h3>
+<br />
+<h3>In a bid to help our customers order in confidence, we
 always stand behind our products and back every order with
-a 100% satisfaction guarantee.
+a 100% satisfaction guarantee.</h3>
           </p>
         </div>
       </section>
@@ -43,11 +43,11 @@ a 100% satisfaction guarantee.
                 <circle cx="12" cy="12" r="3"/>
               </svg>
             </div>
-            <h3>Our Vision</h3>
-            <p>To be India’s Most trusted Manufacturer Of Dunnage
+            <h1>Our Vision</h1>
+            <h1><p>To be India’s Most trusted Manufacturer Of Dunnage
 Air Bags to meet international quality standards, at
 competitive price, with unwavering commitment to
-on-time delivery and 100% customer satisfaction.</p>
+on-time delivery and 100% customer satisfaction.</p></h1>
           </div>
           <div className="mission-card mission-card--mission">
             <div className="mission-icon">
@@ -55,12 +55,12 @@ on-time delivery and 100% customer satisfaction.</p>
                 <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
               </svg>
             </div>
-            <h3>Our Mission</h3>
-            <p>To emerge as a globally recognized leader in Packaging
+            <h1>Our Mission</h1>
+           <h2> <p>To emerge as a globally recognized leader in Packaging
 material, empowering businesses of every scale to ship
 with confidence – by continuously innovating,
 maintaining the highest product quality and building
-lasting partnerships rooted in reliability and value.</p>
+lasting partnerships rooted in reliability and value.</p></h2>
           </div>
         </div>
       </section>

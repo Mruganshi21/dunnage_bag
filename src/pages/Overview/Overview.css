@@ -21,10 +21,16 @@
 
 .feature-image {
   width: 100%;
-  height: 260px;
-  object-fit: cover;
+  height: 300px;
+  object-fit: contain;
   display: block;
   border-radius: 16px 16px 0 0;
+  background: var(--color-light-gray);
+  padding: 1rem;
+}
+
+.feature-card:nth-child(4) .feature-image {
+  object-position: center bottom;
 }
 
 .feature-card-body {

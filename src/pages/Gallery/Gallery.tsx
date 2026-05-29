@@ -13,12 +13,11 @@ import img9 from '../../assets/gallery/WhatsApp Image 2026-04-28 at 3.48.29 PM (
 import img10 from '../../assets/gallery/WhatsApp Image 2026-04-28 at 3.48.29 PM.jpeg';
 import img11 from '../../assets/gallery/WhatsApp Image 2026-04-28 at 3.48.30 PM.jpeg';
 import img12 from '../../assets/gallery/WhatsApp Image 2026-04-28 at 4.10.07 PM (1).jpeg';
-import img13 from '../../assets/gallery/WhatsApp Image 2026-04-28 at 4.10.07 PM.jpeg';
 import img14 from '../../assets/gallery/WhatsApp Image 2026-04-28 at 4.10.08 PM.jpeg';
 
 const galleryImages = [
   img1, img2, img3, img4, img5, img6, img7, img8,
-  img9, img10, img11, img12, img13, img14
+  img9, img10, img11, img12, img14
 ];
 
 const Gallery = () => {
