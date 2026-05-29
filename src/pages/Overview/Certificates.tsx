@@ -3,8 +3,10 @@ import { Link } from 'react-router-dom';
 import './Overview.css';
 import isoCert from '../../assets/certificates/ISO-9001-CERTIFICATE_page-0001.jpg';
 import aarCert from '../../assets/certificates/DBPL-AAR-CERTIFICATE_page-0001.jpg';
+import msmeCert from '../../assets/certificates/MSME CERTIFICATE - 2026-27_page-0001.jpg';
 import aarIcon from '../../assets/certificates/AAR.png';
 import isoIcon from '../../assets/certificates/ISO_9001-2015.svg.png';
+import msmeIcon from '../../assets/certificates/msme-micro-small-medium-enterprises-logo-png_seeklogo-259373.png';
 
 const Certificates = () => {
   const [selectedCert, setSelectedCert] = useState<null | {title: string; file: string}>(null);
@@ -23,6 +25,13 @@ const Certificates = () => {
       description: 'Dunnage Bag Private Limited - AAR Certification',
       icon: aarIcon,
       file: aarCert
+    },
+    {
+      id: 3,
+      title: 'MSME Certificate',
+      description: 'Micro, Small & Medium Enterprise Registration 2026-27',
+      icon: msmeIcon,
+      file: msmeCert
     }
   ];
 
