@@ -5,7 +5,7 @@ import slide2 from '../../assets/homepage/slider_2.png';
 import slide3 from '../../assets/homepage/slider_3.png';
 
 const Hero = () => {
-  const slides = [slide1, slide2, slide3];
+  const slides = [slide1, slide3, slide2];
   const [currentSlide, setCurrentSlide] = useState(0);
 
   useEffect(() => {
