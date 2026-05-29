@@ -1,4 +1,3 @@
-import { Link } from 'react-router-dom';
 import eliteLogo from '../../assets/elite-logo.png';
 import sishLogo from '../../assets/sish-logo.png';
 import './About.css';
