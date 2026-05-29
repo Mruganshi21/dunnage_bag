@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import './Overview.css';
 import isoCert from '../../assets/certificates/ISO-9001-CERTIFICATE_page-0001.jpg';
 import aarCert from '../../assets/certificates/DBPL-AAR-CERTIFICATE_page-0001.jpg';
+import aarIcon from '../../assets/certificates/AAR.png';
 
 const Certificates = () => {
   const [selectedCert, setSelectedCert] = useState<null | {title: string; file: string}>(null);
@@ -19,7 +20,7 @@ const Certificates = () => {
       id: 2,
       title: ' AAR Certificate',
       description: 'Dunnage Bag Private Limited - AAR Certification',
-      icon: '📜',
+      icon: aarIcon,
       file: aarCert
     }
   ];
@@ -40,7 +41,13 @@ const Certificates = () => {
               className="certificate-card"
               onClick={() => setSelectedCert({ title: cert.title, file: cert.file })}
             >
-              <div className="cert-icon">{cert.icon}</div>
+              {cert.id === 2 ? (
+                <div className="cert-icon">
+                  <img src={cert.icon} alt={cert.title} style={{ width: '60px', height: '60px', objectFit: 'contain' }} />
+                </div>
+              ) : (
+                <div className="cert-icon">{cert.icon}</div>
+              )}
               <h3>{cert.title}</h3>
               <p>{cert.description}</p>
               <span className="view-cert">Click to view →</span>
