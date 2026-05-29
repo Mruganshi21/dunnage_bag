@@ -80,7 +80,7 @@ const Contact = () => {
               <h3>Our Location</h3>
               <div className="map-container">
                 <iframe 
-                  src="https://maps.google.com/maps?q=Bharuch+GIDC+Estate+Phase+II+Gujarat&output=embed"
+                  src="https://maps.google.com/maps?q=Plot+No+157%2F3+Phase+II+Bharuch+GIDC+Estate+Gujarat&output=embed"
                   allowFullScreen
                   loading="lazy"
                   referrerPolicy="no-referrer-when-downgrade"
