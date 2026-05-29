@@ -605,8 +605,6 @@
   border-radius: 12px;
   padding: 1rem;
   margin-bottom: 1.5rem;
-  overflow: hidden;
-  max-height: 70vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -617,6 +615,8 @@
   height: auto;
   display: block;
   border-radius: 8px;
+  max-height: 80vh;
+  object-fit: contain;
 }
 
 .cert-modal-content h3 {
