@@ -121,6 +121,7 @@
 }
 
 .close-btn {
+  transition: all 0.2s;
   position: absolute;
   top: 1rem; right: 1rem;
   background: none;
@@ -128,6 +129,17 @@
   font-size: 2rem;
   cursor: pointer;
   color: var(--color-orange);
+}
+
+.close-btn:hover,
+.close-btn:focus-visible {
+  color: var(--color-orange-hover);
+  transform: scale(1.2);
+}
+
+.close-btn:active {
+  color: var(--color-accent);
+  transform: scale(0.95);
 }
 
 @media (max-width: 850px) {

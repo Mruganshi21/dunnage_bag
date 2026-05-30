@@ -80,11 +80,11 @@ const Contact = () => {
               <h3>Our Location</h3>
               <div className="map-container">
                 <iframe 
-                  src="https://maps.google.com/maps?q=Plot+No+157%2F3+Phase+II+Bharuch+GIDC+Estate+Gujarat&output=embed"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3706.568185146756!2d73.0064273!3d21.7219861!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be02100388ab63d%3A0x708b5b1f9ec47f55!2sDunnage+Bag+Pvt.+Ltd.!5e0!3m2!1sen!2sin!4v1717094400!5m2!1sen!2sin"
                   allowFullScreen
                   loading="lazy"
                   referrerPolicy="no-referrer-when-downgrade"
-                  title="Company Location"
+                  title="Dunnage Bag Pvt. Ltd."
                 ></iframe>
               </div>
             </div>

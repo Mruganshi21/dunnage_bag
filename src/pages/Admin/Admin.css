@@ -239,6 +239,19 @@
 .modal-actions button[type="button"] {
   background: var(--color-medium-gray);
   color: var(--color-primary);
+  transition: all 0.2s;
+}
+
+.modal-actions button[type="button"]:hover,
+.modal-actions button[type="button"]:focus-visible {
+  background: var(--color-dark-gray);
+  color: var(--color-white);
+}
+
+.modal-actions button[type="button"]:active {
+  background: var(--color-orange);
+  color: var(--color-white);
+  transform: scale(0.97);
 }
 
 .modal-actions button[type="submit"] {
