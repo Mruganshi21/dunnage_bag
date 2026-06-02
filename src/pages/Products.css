@@ -308,3 +308,9 @@
     height: 280px;
   }
 }
+
+@media (min-width: 1600px) {
+  .products-container {
+    max-width: 1500px;
+  }
+}

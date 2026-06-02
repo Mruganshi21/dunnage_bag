@@ -102,3 +102,9 @@
     box-shadow: 6px 6px 0 0 var(--color-orange), var(--shadow-lg);
   }
 }
+
+@media (min-width: 1600px) {
+  .gallery-container {
+    max-width: 1500px;
+  }
+}

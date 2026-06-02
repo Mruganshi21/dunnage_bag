@@ -180,3 +180,9 @@
     font-size: 0.95rem;
   }
 }
+
+@media (min-width: 1600px) {
+  .about-container {
+    max-width: 1400px;
+  }
+}

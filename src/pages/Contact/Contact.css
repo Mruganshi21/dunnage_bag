@@ -253,3 +253,9 @@
     min-height: 180px;
   }
 }
+
+@media (min-width: 1600px) {
+  .contact-container {
+    max-width: 1300px;
+  }
+}

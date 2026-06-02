@@ -91,3 +91,9 @@
     font-size: 0.8rem;
   }
 }
+
+@media (min-width: 1600px) {
+  .footer-container {
+    max-width: 1400px;
+  }
+}
