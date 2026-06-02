@@ -41,7 +41,7 @@
   z-index: 1;
   text-align: center;
   padding: 4rem 4rem;
-  max-width: 1200px;
+  max-width: 1400px;
   width: 100%;
 }
 
@@ -93,7 +93,7 @@
 /* ─── Story ─── */
 .about-story {
   padding: 6rem 3rem;
-  max-width: 1200px;
+  max-width: 1400px;
   margin: 0 auto;
 }
 
@@ -195,7 +195,7 @@
 /* ─── Stats ─── */
 .about-stats {
   padding: 0 3rem 4rem;
-  max-width: 1200px;
+  max-width: 1400px;
   margin: 0 auto;
 }
 
@@ -238,7 +238,7 @@
 /* ─── Mission ─── */
 .about-mission {
   padding: 4rem 3rem 6rem;
-  max-width: 1200px;
+  max-width: 1400px;
   margin: 0 auto;
 }
 
@@ -304,7 +304,7 @@
 /* ─── Values ─── */
 .about-values {
   padding: 0 3rem 6rem;
-  max-width: 1200px;
+  max-width: 1400px;
   margin: 0 auto;
 }
 
@@ -371,7 +371,7 @@
 /* ─── Group Companies ─── */
 .about-companies {
   padding: 0 3rem 6rem;
-  max-width: 1200px;
+  max-width: 1400px;
   margin: 0 auto;
 }
 
@@ -550,6 +550,6 @@
   .about-mission,
   .about-values,
   .about-companies {
-    max-width: 1500px;
+    max-width: 1700px;
   }
 }
