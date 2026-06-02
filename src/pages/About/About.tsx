@@ -66,8 +66,7 @@ lasting partnerships rooted in reliability and value.</p></h2>
 
       <section className="about-companies">
         <div className="about-companies-content">
-          <span className="section-badge">Our Group</span>
-          <h2>Part of a trusted network</h2>
+          <span className="section-badge">Our Group Companies</span>
           <p>We are proud to be associated with industry-leading organizations that share our commitment to quality and excellence.</p>
           <div className="companies-links">
             <a href="http://eliteind.in/" target="_blank" rel="noopener noreferrer" className="company-link">
