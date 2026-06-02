@@ -11,7 +11,7 @@ const About = () => {
           
           <h1>About Us</h1>
           <p className="about-hero-description">
-            <h3>Dunnage Bag Pvt. Ltd. was established in 2010 in Bharuch,
+            <h3>Dunnage Bag Pvt. Ltd. was established in 2016 in Bharuch,
 Gujarat, with a clear purpose — to redefine how India
 approaches export packaging and cargo protection.</h3>
 <br />

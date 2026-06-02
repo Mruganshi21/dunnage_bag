@@ -3,7 +3,7 @@ import './HappyCustomers.css';
 const HappyCustomers = () => {
   const stats = [
     { id: 1, number: '150+', label: 'Happy Clients' },
-    { id: 2, number: '16+', label: 'manufacturing years' },
+    { id: 2, number: '10+', label: 'manufacturing years' },
     { id: 3, number: '20+', label: 'Countries Served' },
     { id: 4, number: '5000+', label: 'Bag produced every day' },
   ];

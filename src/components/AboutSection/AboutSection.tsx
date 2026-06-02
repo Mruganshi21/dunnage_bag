@@ -16,7 +16,7 @@ const AboutSection = () => {
         <div className="about-content">
           <h1>Who Are We?</h1>
           <p>
-Established In 2010, Dunnage Bag Pvt. Ltd. Is A Leading Manufacturer Of Air Dunnage Bags With Headquarter & Production Plant In Bharuch Gujarat, India.
+Established In 2016, Dunnage Bag Pvt. Ltd. Is A Leading Manufacturer Of Air Dunnage Bags With Headquarter & Production Plant In Bharuch Gujarat, India.
           </p>
           <button className="about-btn" onClick={() => setShowFullAbout(true)}>
            Our Story
