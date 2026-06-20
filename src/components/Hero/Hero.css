@@ -127,12 +127,8 @@
 }
 
 @media (max-width: 480px) {
-  .hero {
-    height: 60dvh;
-  }
-
   .hero-slide-img {
-    object-fit: cover;
+    object-fit: contain;
   }
 
   .hero-company {
