@@ -90,8 +90,7 @@ const Header = () => {
         </nav>
 
         <div className="header-right">
-          <span className="company-name">dunnage bag</span>
-          <span className="company-sub">pvt. ltd.</span>
+          <span className="company-name">dunnage bag pvt. ltd.</span>
         </div>
       </div>
     </header>
