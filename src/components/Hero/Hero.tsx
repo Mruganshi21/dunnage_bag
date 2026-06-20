@@ -26,8 +26,9 @@ const Hero = () => {
           <div
             key={index}
             className={`hero-slide ${index === currentSlide ? 'active' : ''}`}
-            style={{ backgroundImage: `url(${slide})` }}
-          />
+          >
+            <img src={slide} alt={`Slide ${index + 1}`} className="hero-slide-img" />
+          </div>
         ))}
       </div>
       <div className="hero-overlay"></div>
