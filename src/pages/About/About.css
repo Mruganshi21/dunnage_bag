@@ -492,7 +492,8 @@
   }
 
   .about-story-image img {
-    height: 300px;
+    height: auto;
+    max-height: 350px;
   }
 
   .about-story-accent {

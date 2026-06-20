@@ -266,7 +266,9 @@
 
   .category-image,
   .product-image {
-    height: 220px;
+    height: auto;
+    min-height: 220px;
+    max-height: 280px;
   }
 
   .product-content {
@@ -289,7 +291,9 @@
 
   .category-image,
   .product-image {
-    height: 180px;
+    height: auto;
+    min-height: 180px;
+    max-height: 260px;
   }
 
   .category-card h3 {

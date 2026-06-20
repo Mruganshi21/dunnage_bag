@@ -94,7 +94,8 @@
   }
   
   .dunnage-image img {
-    height: 280px;
+    height: auto;
+    max-height: 300px;
   }
 
   .dunnage-description {
@@ -116,7 +117,8 @@
   }
 
   .dunnage-image img {
-    height: 220px;
+    height: auto;
+    max-height: 260px;
   }
 
   .dunnage-description {

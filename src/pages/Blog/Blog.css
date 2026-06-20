@@ -76,7 +76,8 @@
   }
 
   .blog-image img {
-    height: 180px;
+    height: auto;
+    max-height: 220px;
   }
 }
 
@@ -90,7 +91,8 @@
   }
 
   .blog-image img {
-    height: 160px;
+    height: auto;
+    max-height: 200px;
   }
 
   .blog-content {

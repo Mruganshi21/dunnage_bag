@@ -422,7 +422,8 @@
   }
 
   .feature-image {
-    height: 220px;
+    height: auto;
+    max-height: 260px;
   }
 
   .specs-table {
@@ -466,7 +467,8 @@
   }
 
   .feature-image {
-    height: 180px;
+    height: auto;
+    max-height: 220px;
     padding: 0.5rem;
   }
 
