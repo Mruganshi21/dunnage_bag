@@ -128,7 +128,8 @@
 
 @media (max-width: 480px) {
   .hero-slide-img {
-    object-fit: contain;
+    object-fit: cover;
+    object-position: center;
   }
 
   .hero-company {
