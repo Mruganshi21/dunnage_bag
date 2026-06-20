@@ -120,6 +120,11 @@
 }
 
 @media (max-width: 480px) {
+  .hero-slide {
+    background-size: contain;
+    background-color: #1a1a1a;
+  }
+
   .hero-company {
     font-size: 0.75rem;
     letter-spacing: 1px;
