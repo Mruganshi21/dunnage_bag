@@ -56,7 +56,7 @@ const Contact = () => {
           <div className="contact-info">
             <div className="info-section">
               <h3>Address</h3>
-              <p>Plot No: 157/3, Phase-II, Bharuch GIDC Estate, Next to SMP House, Bharuch-392001, Gujarat.</p>
+              <p>Plot No: 157/3, Phase-II, Bharuch GIDC Estate, Next to SMP House, Bharuch-392015, Gujarat.</p>
             </div>
 
             <div className="info-section">
