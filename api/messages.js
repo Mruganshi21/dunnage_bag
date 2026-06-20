@@ -1,16 +1,6 @@
 import { connectDB, Message } from '../lib/mongodb.js';
 import nodemailer from 'nodemailer';
 
-const transporter = nodemailer.createTransport({
-  host: process.env.SMTP_HOST,
-  port: parseInt(process.env.SMTP_PORT),
-  secure: true,
-  auth: {
-    user: process.env.SMTP_USER,
-    pass: process.env.SMTP_PASS,
-  },
-});
-
 export default async function handler(req, res) {
   res.setHeader('Access-Control-Allow-Origin', '*');
   res.setHeader('Access-Control-Allow-Methods', 'GET, POST, OPTIONS');
@@ -20,7 +10,12 @@ export default async function handler(req, res) {
     return res.status(200).end();
   }
 
-  await connectDB();
+  try {
+    await connectDB();
+  } catch (err) {
+    console.error('DB connection error:', err);
+    return res.status(500).json({ success: false, error: 'Database connection failed' });
+  }
 
   if (req.method === 'POST') {
     try {
@@ -28,6 +23,16 @@ export default async function handler(req, res) {
       await message.save();
 
       const { name, email, phone, subject, message: msgBody } = req.body;
+
+      const transporter = nodemailer.createTransport({
+        host: process.env.SMTP_HOST,
+        port: parseInt(process.env.SMTP_PORT),
+        secure: true,
+        auth: {
+          user: process.env.SMTP_USER,
+          pass: process.env.SMTP_PASS,
+        },
+      });
 
       await transporter.sendMail({
         from: process.env.SMTP_USER,
@@ -47,7 +52,7 @@ export default async function handler(req, res) {
 
       return res.status(201).json({ success: true, message: 'Message sent successfully' });
     } catch (error) {
-      console.error('Error:', error);
+      console.error('POST Error:', error);
       return res.status(500).json({ success: false, error: 'Failed to send message' });
     }
   }
@@ -57,6 +62,7 @@ export default async function handler(req, res) {
       const messages = await Message.find().sort({ createdAt: -1 });
       return res.json(messages);
     } catch (error) {
+      console.error('GET Error:', error);
       return res.status(500).json({ error: 'Failed to fetch messages' });
     }
   }
