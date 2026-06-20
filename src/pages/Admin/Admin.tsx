@@ -70,7 +70,7 @@ const Admin = () => {
   const loadMessages = async () => {
     setLoading(true);
     try {
-      const res = await fetch('/api/messages');
+      const res = await fetch('https://api.dunnage-bag.com/api/messages');
       const data = await res.json();
       setMessages(data);
     } catch (error) {
@@ -82,7 +82,7 @@ const Admin = () => {
   const loadBlogs = async () => {
     setLoading(true);
     try {
-      const res = await fetch('/api/blogs');
+      const res = await fetch('https://api.dunnage-bag.com/api/blogs');
       const data = await res.json();
       setBlogs(data);
     } catch (error) {
@@ -100,7 +100,7 @@ const Admin = () => {
   const handleAddBlog = async (e: React.FormEvent) => {
     e.preventDefault();
     try {
-      await fetch('/api/blogs', {
+      await fetch('https://api.dunnage-bag.com/api/blogs', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(blogForm)
@@ -116,7 +116,7 @@ const Admin = () => {
   const handleDeleteBlog = async (id: string) => {
     if (!confirm('Delete this blog?')) return;
     try {
-      await fetch(`/api/blogs/${id}`, { method: 'DELETE' });
+      await fetch(`https://api.dunnage-bag.com/api/blogs/${id}`, { method: 'DELETE' });
       loadBlogs();
     } catch (error) {
       console.error('Failed to delete blog:', error);
