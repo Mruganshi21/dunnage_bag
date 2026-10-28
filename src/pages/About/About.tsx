@@ -1,5 +1,6 @@
 import eliteLogo from '../../assets/elite-logo.png';
 import sishLogo from '../../assets/sish-logo.png';
+import aboutImage from '../../assets/aboutus.jpeg';
 import './About.css';
 
 const About = () => {
@@ -8,28 +9,53 @@ const About = () => {
       <section className="about-hero">
         <div className="about-hero-overlay" />
         <div className="about-hero-content">
-          
-          <h1>About Us</h1>
-          <p className="about-hero-description">
-            <h3>Dunnage Bag Pvt. Ltd. was established in 2016 in Bharuch,
-Gujarat, with a clear purpose — to redefine how India
-approaches export packaging and cargo protection.</h3>
-<br />
-<h3>Over the past 14+ years, we have grown from a regional
-supplier into one of India's most professional, progressive,
-and punctual industry in the Dunnage Air Bags
-Manufacturing.</h3>
-<br />
-<h3>Our products are precisely manufactured by following high
-quality standards for best performance matching
-international standards. We understand that our success is
-dependent upon yours. We offer top quality packaging
-materials at competitive prices.</h3>
-<br />
-<h3>In a bid to help our customers order in confidence, we
-always stand behind our products and back every order with
-a 100% satisfaction guarantee.</h3>
-          </p>
+          <div className="about-hero-grid">
+            <div className="about-hero-text">
+              <span className="about-hero-eyebrow">Who We Are</span>
+              <h1>About <span>Us</span></h1>
+              <p className="about-hero-lead">
+                Dunnage Bag Pvt. Ltd. was established in 2016 in Bharuch, Gujarat, with a clear
+                purpose — to redefine how India approaches export packaging and cargo protection.
+              </p>
+              <p>
+                Over the past 10+ years, we have grown from a regional supplier into one of India's
+                most professional, progressive, and punctual industry in the Dunnage Air Bags
+                Manufacturing.
+              </p>
+              <p>
+                Our products are precisely manufactured by following high quality standards for best
+                performance matching international standards. We understand that our success is
+                dependent upon yours. We offer top quality packaging materials at competitive prices.
+              </p>
+              <div className="about-hero-guarantee">
+                <span className="about-hero-guarantee-icon" aria-hidden="true">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                    <polyline points="9 12 11 14 15 10"/>
+                  </svg>
+                </span>
+                <p>
+                  In a bid to help our customers order in confidence, we always stand behind our
+                  products and back every order with a 100% satisfaction guarantee.
+                </p>
+              </div>
+            </div>
+
+            <div className="about-hero-media">
+              <img src={aboutImage} alt="Dunnage Bag Pvt. Ltd. manufacturing facility in Bharuch, Gujarat" width={1600} height={1200} />
+              <div className="about-hero-badge">
+                <strong>2016</strong>
+                <span>Established in Bharuch</span>
+              </div>
+            </div>
+          </div>
+
+          <ul className="about-hero-stats">
+            <li><strong>2016</strong><span>Established</span></li>
+            <li><strong>10<em>+</em></strong><span>Years of Experience</span></li>
+            <li><strong>100<em>%</em></strong><span>Satisfaction Guarantee</span></li>
+            <li><strong>Bharuch</strong><span>Gujarat, India</span></li>
+          </ul>
         </div>
       </section>
 
